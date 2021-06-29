@@ -7,6 +7,8 @@
     * Возможность купить тур при корректном заполнении формы с использованием карты (status APPROVED)
     * Невозможность купить тур и получение уведомлений о некорректном заполнении полей формы, в том числе при корректном заполнении с использованием 
     карты (status DECLINED)
+    ![Image 3](https://user-images.githubusercontent.com/47859608/123832926-eb974780-d916-11eb-87b9-bca0f1830aa8.png)
+
 ___
 
 ## 2. Виды тестирования
@@ -157,6 +159,8 @@ ___
 * ожидаемый результат:
   * код 200 OK
   * payment_entity status: APPROVED
+  * ![Image 1](https://user-images.githubusercontent.com/47859608/123833172-20a39a00-d917-11eb-93e1-3295abbf8f5b.png)
+
     
 Сценарий 3.2
 * POST запрос по адресу http://localhost:8080/api/v1/pay
@@ -171,6 +175,8 @@ ___
 * ожидаемый результат:
   * код 200 OK
   * payment_entity status: APPROVED
+  * ![Image 2](https://user-images.githubusercontent.com/47859608/123833132-184b5f00-d917-11eb-98d4-e391e3541371.png)
+
     
 Сценарий 3.4
 * POST запрос по адресу http://localhost:8080/api/v1/credit
