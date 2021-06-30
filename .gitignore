@@ -19,7 +19,7 @@ build/
 out/
 
 ### Node modules ###
-node_modules
+gate-simulator/node_modules
 
 ### NetBeans ###
 /nbproject/private/
