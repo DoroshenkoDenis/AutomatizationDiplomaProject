@@ -72,7 +72,7 @@ public class DataHelper {
         if (status.equals("zero")) {
             return "0";
         }
-            return "00";
+        return "00";
     }
 
     private static String getMonth(String dateMethod, String dateStatus, String badMonthStatus) {
@@ -113,10 +113,9 @@ public class DataHelper {
         );
     }
 
-
     public static void main(String[] args) {
         System.out.println("please try and look at this:  ----> " + getCardInfo(
-                "APPROVED, DECLINED or nothing for a random choice",
+                "APPROVED, DECLINED, short, one or nothing for a random choice",
                 "en",
                 "getDate or nothing for a incorrect date",
                 "past, future or nothing for choice a current date (if dateMethod = getDate)",
