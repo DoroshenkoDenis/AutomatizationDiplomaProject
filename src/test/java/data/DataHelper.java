@@ -119,11 +119,11 @@ public class DataHelper {
                 "APPROVED, DECLINED or nothing for a random choice",
                 "en",
                 "getDate or nothing for a incorrect date",
-                "past, future or nothing for a current date choice (if dateMethod = getDate)",
-                "zero, doubleZero or nothing for a incorrect value choice (from 13 to 99) (if dateMethod != getDate)",
-                "zero doubleZero or nothing for a doubleZero value choice(if dateMethod != getDate)",
-                "tripleZero, short or for a random value",
-                "badName or nothing for a random correct name"
+                "past, future or nothing for choice a current date (if dateMethod = getDate)",
+                "zero, doubleZero or nothing for choice an incorrect value (from 13 to 99) (if dateMethod != getDate)",
+                "zero doubleZero or nothing for choice a doubleZero value (if dateMethod != getDate)",
+                "tripleZero, short or for choice a random value",
+                "badName or nothing for choice a random correct name"
         ) + " <----");
     }
 
