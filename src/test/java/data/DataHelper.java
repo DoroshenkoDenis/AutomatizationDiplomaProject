@@ -23,148 +23,111 @@ public class DataHelper {
         String cvc;
     }
 
-    private static String getFullName() {
+    private static String getNumber(String status, String locale) {
+        if (status.equals("APPROVED")) {
+            return "4444 4444 4444 4441";
+        }
+        if (status.equals("DECLINED")) {
+            return "4444 4444 4444 4442";
+        }
+        if (status.equals("short")) {
+            return "4444 4444 4444 444";
+        }
+        if (status.equals("one")) {
+            return "4";
+        }
+        return new Faker(new Locale(locale)).finance().creditCard();
+    }
+
+    private static String getFullName(String status) {
+        Faker faker = new Faker();
+        if (status.equals("badName")) {
+            return faker.aquaTeenHungerForce().character() + " - " + faker.number().numberBetween(1, 999);
+        }
         return new Faker().name().firstName().toUpperCase() + " " + new Faker().name().firstName().toUpperCase();
     }
 
-    public static CardInfo getApprovedCardInfo() {
-        return new CardInfo("4444444444444441", "12", "22", getFullName(), "777");
+    private static LocalDate getDate(String status) {
+        if (status.equals("past")) {
+            return LocalDate.now().minusMonths(new Faker().number().numberBetween(1, 12 * 5));
+        }
+        if (status.equals("future")) {
+            return LocalDate.now().plusMonths(new Faker().number().numberBetween(1, 12 * 5));
+        }
+        return LocalDate.now();
     }
 
-    public static CardInfo getDeclinedCardInfo() {
-        return new CardInfo("4444444444444442", "12", "22", getFullName(), "777");
-    }
-
-
-    public static CardInfo getRandomCardNumber(String locale) {
-        Faker faker = new Faker(new Locale(locale));
-        return new CardInfo(
-                faker.finance().creditCard(),
-                getApprovedCardInfo().month,
-                getApprovedCardInfo().year,
-                getApprovedCardInfo().cardHolder,
-                getApprovedCardInfo().cvc
-        );
-    }
-
-    public static CardInfo getShortCardNumber() {
-        return new CardInfo(
-                "444444444444444",
-                getApprovedCardInfo().month,
-                getApprovedCardInfo().year,
-                getApprovedCardInfo().cardHolder,
-                getApprovedCardInfo().cvc
-        );
-    }
-
-    public static CardInfo getOneDigitInCardNumberField() {
-        return new CardInfo(
-                "4",
-                getApprovedCardInfo().month,
-                getApprovedCardInfo().year,
-                getApprovedCardInfo().cardHolder,
-                getApprovedCardInfo().cvc
-        );
-    }
-
-    public static CardInfo getZeroInMonthField() {
-        return new CardInfo(
-                getApprovedCardInfo().number,
-                "0",
-                getApprovedCardInfo().year,
-                getApprovedCardInfo().cardHolder,
-                getApprovedCardInfo().cvc
-        );
-    }
-
-    public static CardInfo getDoubleZeroInMonthField() {
-        return new CardInfo(
-                getApprovedCardInfo().number,
-                "00",
-                getApprovedCardInfo().year,
-                getApprovedCardInfo().cardHolder,
-                getApprovedCardInfo().cvc
-        );
-    }
-
-    public static CardInfo getBadMonth() {
+    private static String getBadMonth(String status) {
         Faker faker = new Faker();
-        return new CardInfo(
-                getApprovedCardInfo().number,
-                String.valueOf(faker.number().numberBetween(13, 99)),
-                getApprovedCardInfo().year,
-                getApprovedCardInfo().cardHolder,
-                getApprovedCardInfo().cvc
-        );
+        if (status.equals("zero")) {
+            return "0";
+        }
+        if (status.equals("doubleZero")) {
+            return "00";
+        }
+        return String.valueOf(faker.number().numberBetween(13, 99));
     }
 
-    public static CardInfo getLastMonth() {
-        return new CardInfo(
-                getApprovedCardInfo().number,
-                LocalDate.now().minusMonths(1).format(ofPattern("MM")),
-                getApprovedCardInfo().year,
-                getApprovedCardInfo().cardHolder,
-                getApprovedCardInfo().cvc
-        );
+    private static String getBadYear(String status) {
+        if (status.equals("zero")) {
+            return "0";
+        }
+        if (status.equals("doubleZero")) {
+            return "00";
+        }
+        return String.valueOf(LocalDate.now().plusMonths(new Faker().number().numberBetween(1, 12 * 5)).getYear());
     }
 
-    public static CardInfo getZeroInYearField() {
-        return new CardInfo(
-                getApprovedCardInfo().number,
-                getApprovedCardInfo().month,
-                "0",
-                getApprovedCardInfo().cardHolder,
-                getApprovedCardInfo().cvc
-        );
+    private static String getMonth(String dateMethod, String dateStatus, String badMonthStatus) {
+        if (dateMethod.equals("getDate")) {
+            return getDate(dateStatus).format(ofPattern("MM"));
+        }
+        return getBadMonth(badMonthStatus);
     }
 
-    public static CardInfo getDoubleZeroInYearField() {
-        return new CardInfo(
-                getApprovedCardInfo().number,
-                getApprovedCardInfo().month,
-                "00",
-                getApprovedCardInfo().cardHolder,
-                getApprovedCardInfo().cvc
-        );
+    private static String getYear(String dateMethod, String dateStatus, String badYearStatus) {
+        if (dateMethod.equals("getDate")) {
+            return getDate(dateStatus).format(ofPattern("yy"));
+        }
+        return getBadYear(badYearStatus);
     }
 
-    public static CardInfo getLastYears() {
-        Faker faker = new Faker();
-        return new CardInfo(
-                getApprovedCardInfo().number,
-                getApprovedCardInfo().month,
-                //  Рассчитывается значение относительно текущего года, возвращает значение от 01 до (текущий год -1)
-                LocalDate.now().minusYears(faker.number().numberBetween(1, LocalDate.now().minusYears(2001).getYear())).format(ofPattern("yy")),
-                getApprovedCardInfo().cardHolder,
-                getApprovedCardInfo().cvc
-        );
+    private static String getCVC(String status) {
+        String cvc = new Faker().number().digits(3);
+        if (status.equals("tripleZero")) {
+            return "000";
+        }
+        if (status.equals("short")) {
+            return String.valueOf(new Faker().number().numberBetween(0, 99));
+        }
+        if (cvc.equals("000")) {
+            return "777";
+        }
+        return cvc;
     }
 
-    public static CardInfo getOverSixYears() {
-        Faker faker = new Faker();
+    public static CardInfo getCardInfo(String cardStatus, String requiredLocale, String dateMethod, String dateStatus, String badMonthStatus, String badYearStatus, String holderStatus, String cvcStatus) {
         return new CardInfo(
-                getApprovedCardInfo().number,
-                getApprovedCardInfo().month,
-                LocalDate.now().plusYears(6).format(ofPattern("yy")),
-                getApprovedCardInfo().cardHolder,
-                getApprovedCardInfo().cvc
-        );
-    }
-
-    public static CardInfo getCardHolderBadName() {
-        Faker faker = new Faker();
-        return new CardInfo(
-                getApprovedCardInfo().number,
-                getApprovedCardInfo().month,
-                getApprovedCardInfo().year,
-                faker.aquaTeenHungerForce().character() + " - " + faker.number().numberBetween(1,999),
-                getApprovedCardInfo().cvc
+                getNumber(cardStatus, requiredLocale),
+                getMonth(dateMethod, dateStatus, badMonthStatus),
+                getYear(dateMethod, dateStatus, badYearStatus),
+                getFullName(holderStatus),
+                getCVC(cvcStatus)
         );
     }
 
 
     public static void main(String[] args) {
-        System.out.println("LOOK AT THIS :  ----> " + getCardHolderBadName().getCardHolder() + " <----");
+        System.out.println("please try and look at this :  ----> " + getCardInfo(
+                "APPROVED, DECLINED or nothing for a random choice",
+                "en",
+                "getDate or nothing for a incorrect date",
+                "past, future or nothing for a current date choice (if dateMethod = getDate)",
+                "zero, doubleZero or nothing for a incorrect value (from 13 to 99) (if dateMethod != getDate)",
+                "zero, doubleZero or nothing for a random correct value (if dateMethod != getDate)",
+                "tripleZero, short or for a random value",
+                "badName or nothing for a random correct name"
+        ) + " <----");
     }
 
 }
