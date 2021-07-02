@@ -113,6 +113,7 @@ public class DataHelper {
         );
     }
 
+//    оставляю пока здесь для отладки и проверки
     public static void main(String[] args) {
         System.out.println("please try and look at this:  ----> " + getCardInfo(
                 "APPROVED, DECLINED, short, one or nothing for a random choice",
