@@ -72,10 +72,7 @@ public class DataHelper {
         if (status.equals("zero")) {
             return "0";
         }
-        if (status.equals("doubleZero")) {
             return "00";
-        }
-        return String.valueOf(LocalDate.now().plusMonths(new Faker().number().numberBetween(1, 12 * 5)).getYear());
     }
 
     private static String getMonth(String dateMethod, String dateStatus, String badMonthStatus) {
@@ -118,13 +115,13 @@ public class DataHelper {
 
 
     public static void main(String[] args) {
-        System.out.println("please try and look at this :  ----> " + getCardInfo(
+        System.out.println("please try and look at this:  ----> " + getCardInfo(
                 "APPROVED, DECLINED or nothing for a random choice",
                 "en",
                 "getDate or nothing for a incorrect date",
                 "past, future or nothing for a current date choice (if dateMethod = getDate)",
-                "zero, doubleZero or nothing for a incorrect value (from 13 to 99) (if dateMethod != getDate)",
-                "zero, doubleZero or nothing for a random correct value (if dateMethod != getDate)",
+                "zero, doubleZero or nothing for a incorrect value choice (from 13 to 99) (if dateMethod != getDate)",
+                "zero doubleZero or nothing for a doubleZero value choice(if dateMethod != getDate)",
                 "tripleZero, short or for a random value",
                 "badName or nothing for a random correct name"
         ) + " <----");
