@@ -1,25 +1,26 @@
 package page;
 
 import com.codeborne.selenide.SelenideElement;
+import data.DataHelper;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class PaymentForm {
-    private SelenideElement cardNumberField = $("form > fieldset > div:nth-child(1) .input__control");
-    private SelenideElement monthField = $("form > fieldset > div:nth-child(2) .input__control");
-    private SelenideElement yearField = $("form > fieldset > div:nth-child(2) > span > span:nth-child(2) .input__control");
-    private SelenideElement holderField = $("form > fieldset > div:nth-child(3) .input__control");
-    private SelenideElement cvcField = $("form > fieldset > div:nth-child(3) > span > span:nth-child(2) .input__control");
-    private SelenideElement continueButton = $(byText("Продолжить"));
-    private SelenideElement wrongFormatNotification = $(".input__sub");
+    private final SelenideElement cardNumberField = $("form > fieldset > div:nth-child(1) .input__control");
+    private final SelenideElement monthField = $("form > fieldset > div:nth-child(2) .input__control");
+    private final SelenideElement yearField = $("form > fieldset > div:nth-child(2) > span > span:nth-child(2) .input__control");
+    private final SelenideElement holderField = $("form > fieldset > div:nth-child(3) .input__control");
+    private final SelenideElement cvcField = $("form > fieldset > div:nth-child(3) > span > span:nth-child(2) .input__control");
+    private final SelenideElement continueButton = $(byText("Продолжить"));
+    private final SelenideElement wrongFormatNotification = $(".input__sub");
 
-    public void buyWithCardInfo() {
-        cardNumberField.setValue("4444-4444-4444-44441");
-        monthField.setValue("11");
-        yearField.setValue("22");
-        holderField.setValue("dorko");
-        cvcField.setValue("123");
+    public void buyWithCardInfo(String cardStatus, String requiredLocale, String dateMethod, String dateStatus, String badMonthStatus, String badYearStatus, String holderStatus, String cvcStatus) { ;
+        cardNumberField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus).getNumber());
+        monthField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus).getMonth());
+        yearField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus).getYear());
+        holderField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus).getCardHolder());
+        cvcField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus).getCvc());
         continueButton.click();
     }
 }
