@@ -5,6 +5,7 @@ import lombok.Data;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.sleep;
 
 @Data
 public class SalesPage {
@@ -17,10 +18,12 @@ public class SalesPage {
         debitBuyingButton.click();
         return new PaymentForm();
     }
+
     public PaymentForm buyByCredit() {
-        debitBuyingButton.click();
+        creditBuyingButton.click();
         return new PaymentForm();
     }
+
 }
 
 

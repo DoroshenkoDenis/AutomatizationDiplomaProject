@@ -57,6 +57,10 @@ public class DataHelper {
         return LocalDate.now();
     }
 
+    public static void main(String[] args) {
+        System.out.println(new Faker().number().numberBetween(1, 12 * 5));
+    }
+
     private static String getBadMonth(String status) {
         Faker faker = new Faker();
         if (status.equals("zero")) {
@@ -113,18 +117,27 @@ public class DataHelper {
         );
     }
 
-//    оставляю пока здесь для отладки и проверки
-    public static void main(String[] args) {
-        System.out.println("please try and look at this:  ----> " + getCardInfo(
-                "APPROVED, DECLINED, short, one or nothing for a random choice",
-                "en",
-                "getDate or nothing for a incorrect date",
-                "past, future or nothing for choice a current date (if dateMethod = getDate)",
-                "zero, doubleZero or nothing for choice an incorrect value (from 13 to 99) (if dateMethod != getDate)",
-                "zero or nothing for choice a doubleZero value (if dateMethod != getDate)",
-                "badName or nothing for choice a random correct name",
-                "tripleZero, short or nothing for choice a random value"
-        ) + " <----");
-    }
+    //    оставляю пока здесь для отладки и проверки
+//    public static void main(String[] args) {
+//        System.out.println("please try and look at this:  ----> " + getCardInfo(
+//                "APPROVED",
+//                "en",
+//                "getDate",
+//                "future",
+//                ")",
+//                "",
+//                "",
+//                ""
+//        ) + " <----");
+//    }
+
+//            "APPROVED, DECLINED, short, one or nothing for a random choice",
+//            "en",
+//            "getDate or nothing for a incorrect date",
+//            "past, future or nothing for choice a current date (if dateMethod = getDate)",
+//            "zero, doubleZero or nothing for choice an incorrect value (from 13 to 99) (if dateMethod != getDate)",
+//            "zero or nothing for choice a doubleZero value (if dateMethod != getDate)",
+//            "badName or nothing for choice a random correct name",
+//            "tripleZero, short or nothing for choice a random value"
 
 }
