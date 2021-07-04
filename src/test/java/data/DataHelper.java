@@ -57,10 +57,6 @@ public class DataHelper {
         return LocalDate.now();
     }
 
-    public static void main(String[] args) {
-        System.out.println(new Faker().number().numberBetween(1, 12 * 5));
-    }
-
     private static String getBadMonth(String status) {
         Faker faker = new Faker();
         if (status.equals("zero")) {
@@ -117,20 +113,7 @@ public class DataHelper {
         );
     }
 
-    //    оставляю пока здесь для отладки и проверки
-//    public static void main(String[] args) {
-//        System.out.println("please try and look at this:  ----> " + getCardInfo(
-//                "APPROVED",
-//                "en",
-//                "getDate",
-//                "future",
-//                ")",
-//                "",
-//                "",
-//                ""
-//        ) + " <----");
-//    }
-
+//             Statuses:
 //            "APPROVED, DECLINED, short, one or nothing for a random choice",
 //            "en",
 //            "getDate or nothing for a incorrect date",
