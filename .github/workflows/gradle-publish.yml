@@ -36,7 +36,7 @@ jobs:
     - name: java
       run: java -jar aqa-shop/aqa-shop.jar &
     - name: Permission
-      run: chmod +x gradlew
+      run: chmod +x ./gradlew
     - name: Test with Gradle
       run: ./gradlew test --info -Dselenide.headless=true
 
