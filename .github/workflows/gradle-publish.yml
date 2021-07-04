@@ -39,6 +39,6 @@ jobs:
    
 
     - name: Build with Gradle
-      run: gradle build --info -Dselenide.headless=true
+      run: gradle build ./gradlew test --info -Dselenide.headless=true
 
 
