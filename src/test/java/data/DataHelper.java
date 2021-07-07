@@ -103,7 +103,6 @@ public class DataHelper {
         return cvc;
     }
 
-
     public static CardInfo getCardInfo(String cardStatus, String requiredLocale, String dateMethod, String dateStatus, String badMonthStatus, String badYearStatus, String holderStatus, String cvcStatus) {
         return new CardInfo(
                 getNumber(cardStatus, requiredLocale),
