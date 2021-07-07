@@ -103,6 +103,7 @@ public class DataHelper {
         return cvc;
     }
 
+
     public static CardInfo getCardInfo(String cardStatus, String requiredLocale, String dateMethod, String dateStatus, String badMonthStatus, String badYearStatus, String holderStatus, String cvcStatus) {
         return new CardInfo(
                 getNumber(cardStatus, requiredLocale),
@@ -112,15 +113,13 @@ public class DataHelper {
                 getCVC(cvcStatus)
         );
     }
-
-//             Statuses:
-//            "APPROVED, DECLINED, short, one or nothing for a random choice",
-//            "en",
-//            "getDate or nothing for a incorrect date",
-//            "past, future or nothing for choice a current date (if dateMethod = getDate)",
-//            "zero, doubleZero or nothing for choice an incorrect value (from 13 to 99) (if dateMethod != getDate)",
-//            "zero or nothing for choice a doubleZero value (if dateMethod != getDate)",
-//            "badName or nothing for choice a random correct name",
-//            "tripleZero, short or nothing for choice a random value"
-
+    //             Statuses:
+    //            "APPROVED, DECLINED, short, one or nothing for a random choice",
+    //            "en",
+    //            "getDate or nothing for a incorrect date",
+    //            "past, future or nothing for choice a current date (if dateMethod = getDate)",
+    //            "zero, doubleZero or nothing for choice an incorrect value (from 13 to 99) (if dateMethod != getDate)",
+    //            "zero or nothing for choice a doubleZero value (if dateMethod != getDate)",
+    //            "badName or nothing for choice a random correct name",
+    //            "tripleZero, short or nothing for choice a random value"
 }
