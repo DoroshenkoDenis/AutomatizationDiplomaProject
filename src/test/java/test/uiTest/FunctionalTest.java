@@ -1,6 +1,7 @@
 package test.uiTest;
 
 import com.codeborne.selenide.Condition;
+import data.DataBaseHelper;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import page.SalesPage;
@@ -8,6 +9,7 @@ import page.SalesPage;
 import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FunctionalTest {
     SalesPage salesPage = new SalesPage();
@@ -30,23 +32,27 @@ public class FunctionalTest {
                 "ok"
         );
         salesPage.getSuccessNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
+        assertEquals("APPROVED",DataBaseHelper.getDebitBuyingStatus());
+        DataBaseHelper.dropDataBase();
+
     }
 
-    //  Тест должен упасть - Баг - неверное уведомление
-//    @Test
-//    void debitBuyingByDeclinedCard() {
-//        salesPage.buyByDebit().buyWithCardInfo(
-//                "DECLINED",
-//                "en",
-//                "getDate",
-//                "future",
-//                "no",
-//                "no",
-//                "ok",
-//                "ok"
-//        );
-//        salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
-//    }
+    @Test
+    void debitBuyingByDeclinedCard() {
+        salesPage.buyByDebit().buyWithCardInfo(
+                "DECLINED",
+                "en",
+                "getDate",
+                "future",
+                "no",
+                "no",
+                "ok",
+                "ok"
+        );
+        salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
+        assertEquals("DECLINED",DataBaseHelper.getDebitBuyingStatus());
+        DataBaseHelper.dropDataBase();
+    }
 
     @Test
     void creditBuyingByApprovedCard() {
@@ -61,6 +67,8 @@ public class FunctionalTest {
                 "ok"
         );
         salesPage.getSuccessNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
+        assertEquals("APPROVED",DataBaseHelper.getCreditBuyingStatus());
+        DataBaseHelper.dropDataBase();
     }
 
     @Test
@@ -76,6 +84,8 @@ public class FunctionalTest {
                 "ok"
         );
         salesPage.getSuccessNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
+        assertEquals("DECLINED",DataBaseHelper.getCreditBuyingStatus());
+        DataBaseHelper.dropDataBase();
     }
 
 }
