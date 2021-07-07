@@ -7,11 +7,11 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class PaymentForm {
-    private final SelenideElement cardNumberField = $("form > fieldset > div:nth-child(1) .input__control");
-    private final SelenideElement monthField = $("form > fieldset > div:nth-child(2) .input__control");
-    private final SelenideElement yearField = $("form > fieldset > div:nth-child(2) > span > span:nth-child(2) .input__control");
-    private final SelenideElement holderField = $("form > fieldset > div:nth-child(3) .input__control");
-    private final SelenideElement cvcField = $("form > fieldset > div:nth-child(3) > span > span:nth-child(2) .input__control");
+    private final SelenideElement cardNumberField = $("[placeholder='0000 0000 0000 0000']");
+    private final SelenideElement monthField = $("[placeholder='08']");
+    private final SelenideElement yearField = $("[placeholder='22']");
+    private final SelenideElement holderField = $$(".input__control").get(3);
+    private final SelenideElement cvcField = $("[placeholder='999'");
     private final SelenideElement continueButton = $(byText("Продолжить"));
     private final SelenideElement wrongFormatNotification = $(".input__sub");
 
