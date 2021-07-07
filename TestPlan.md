@@ -159,7 +159,7 @@ ___
   * код 200 OK
   * ![Image 1](https://user-images.githubusercontent.com/47859608/123833172-20a39a00-d917-11eb-93e1-3295abbf8f5b.png)
   * response "status: APPROVED"
-
+  * * ![pay 200 a](https://user-images.githubusercontent.com/47859608/124793391-fe38fe80-df5e-11eb-95d5-78c198f0d83a.png)
     
 Сценарий 3.2
 * POST запрос по адресу http://localhost:8080/api/v1/pay
@@ -167,6 +167,7 @@ ___
     * ожидаемый результат:
     * код 200 OK
     * response "status: DECLINED"
+    * ![pay 200 d](https://user-images.githubusercontent.com/47859608/124793530-24f73500-df5f-11eb-891f-4b7f344b6701.png)
     
 Сценарий 3.3
 * POST запрос по адресу http://localhost:8080/api/v1/credit
@@ -175,13 +176,15 @@ ___
   * код 200 OK
   * ![Image 2](https://user-images.githubusercontent.com/47859608/123833132-184b5f00-d917-11eb-98d4-e391e3541371.png)
   * response "status: APPROVED"
+  * ![credit 200 approved](https://user-images.githubusercontent.com/47859608/124793579-2f193380-df5f-11eb-9f4f-4b7fc60af459.png)
   
 Сценарий 3.4
 * POST запрос по адресу http://localhost:8080/api/v1/credit
 * {number: "4444 4444 4444 4442", year: "22", month: "12", holder: "DENIS DOROSHENKO", cvc: "777"}
 * ожидаемый результат:
     * код 200 OK
-    * response "status: APPROVED"
+    * response "status: DECLINED"
+    * ![credit 200 declined](https://user-images.githubusercontent.com/47859608/124793671-47894e00-df5f-11eb-95c4-e1cae7c7e898.png)
 
 Сценарий 3.5
 * POST запрос по адресу http://localhost:8080/api/v1/pay
@@ -189,6 +192,7 @@ ___
 * ожидаемый результат:
   * код 500 
   * response "message: 400 Bad Request"
+  * ![pay 500](https://user-images.githubusercontent.com/47859608/124793722-553ed380-df5f-11eb-8b8f-70f3fb858b9d.png)
 
 Сценарий 3.6
 * POST запрос по адресу http://localhost:8080/api/v1/credit
@@ -196,7 +200,7 @@ ___
 * ожидаемый результат:
   * код 500 
   * response "message: 400 Bad Request"
-
+  * ![credit 500](https://user-images.githubusercontent.com/47859608/124793735-58d25a80-df5f-11eb-85b8-52b21fe35f7a.png)
 ___
 ## 4. Перечень используемых инструментов:
 * Java 11 - популярная версия языка программирования на котором разрабатывается ПО;
