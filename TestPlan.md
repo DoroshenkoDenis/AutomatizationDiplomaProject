@@ -157,8 +157,8 @@ ___
 *   {number: "4444 4444 4444 4441", year: "22", month: "12", holder: "DENIS DOROSHENKO", cvc: "777"}
 * ожидаемый результат:
   * код 200 OK
-  * payment_entity status: APPROVED
   * ![Image 1](https://user-images.githubusercontent.com/47859608/123833172-20a39a00-d917-11eb-93e1-3295abbf8f5b.png)
+  * response "status: APPROVED"
 
     
 Сценарий 3.2
@@ -166,23 +166,37 @@ ___
 *   {number: "4444 4444 4444 4442", year: "22", month: "12", holder: "DENIS DOROSHENKO", cvc: "777"}
     * ожидаемый результат:
     * код 200 OK
-    * payment_entity status: DECLINED
+    * response "status: DECLINED"
     
 Сценарий 3.3
 * POST запрос по адресу http://localhost:8080/api/v1/credit
 *   {number: "4444 4444 4444 4441", year: "22", month: "12", holder: "DENIS DOROSHENKO", cvc: "777"}
 * ожидаемый результат:
   * код 200 OK
-  * payment_entity status: APPROVED
   * ![Image 2](https://user-images.githubusercontent.com/47859608/123833132-184b5f00-d917-11eb-98d4-e391e3541371.png)
-
-    
+  * response "status: APPROVED"
+  
 Сценарий 3.4
 * POST запрос по адресу http://localhost:8080/api/v1/credit
 * {number: "4444 4444 4444 4442", year: "22", month: "12", holder: "DENIS DOROSHENKO", cvc: "777"}
 * ожидаемый результат:
     * код 200 OK
-    * payment_entity status: APPROVED
+    * response "status: APPROVED"
+
+Сценарий 3.5
+* POST запрос по адресу http://localhost:8080/api/v1/pay
+* {number: "4444 6666 5555 3333", year: "22", month: "12", holder: "DENIS DOROSHENKO", cvc: "777"}
+* ожидаемый результат:
+  * код 500 
+  * response "message: 400 Bad Request"
+
+Сценарий 3.6
+* POST запрос по адресу http://localhost:8080/api/v1/credit
+* {number: "4444 6666 5555 3333", year: "22", month: "12", holder: "DENIS DOROSHENKO", cvc: "777"}
+* ожидаемый результат:
+  * код 500 
+  * response "message: 400 Bad Request"
+
 ___
 ## 4. Перечень используемых инструментов:
 * Java 11 - популярная версия языка программирования на котором разрабатывается ПО;
