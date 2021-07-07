@@ -120,6 +120,7 @@ public class DataHelper {
 //            "past, future or nothing for choice a current date (if dateMethod = getDate)",
 //            "zero, doubleZero or nothing for choice an incorrect value (from 13 to 99) (if dateMethod != getDate)",
 //            "zero or nothing for choice a doubleZero value (if dateMethod != getDate)",
-//            "badName or nothing for choice a random correct name",//            "tripleZero, short or nothing for choice a random value"
+//            "badName or nothing for choice a random correct name",
+//            "tripleZero, short or nothing for choice a random value"
 
 }
