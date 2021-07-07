@@ -17,6 +17,7 @@ services:
       - POSTGRES_USER=app
       - POSTGRES_PASSWORD=pass
 
+
   # сервис mysql
   mysql-db:
     # Образ на основе которого он будет запускаться
@@ -34,7 +35,7 @@ services:
 
   # сервис - simulator
   node-gate-simulator:
-    #     <build: .> - означает, что мы собираем образ из Dockerfile, находящемся в текущем каталоге
+    # <build: .> - означает, что мы собираем образ из Dockerfile, находящемся в текущем каталоге
     build: gate-simulator
     container_name: gate-simulator
     # Образ на основе которого он будет запускаться
@@ -43,18 +44,3 @@ services:
     ports:
       - 9999:9999
 
-#  aqa-shop:
-#    #     <build: .> - означает, что мы собираем образ из Dockerfile, находящемся в текущем каталоге
-#    build: aqa-shop
-#    container_name: aqa-shop
-#    # Образ на основе которого он будет запускаться
-#    image: aqa-shop:1.0
-#    # Пробросить порт 9999 хоста в порт 9999 контейнера
-#    ports:
-#      - 8080:8080
-#    links:
-#      - postgres-db
-#      - mysql-db
-#      - node-gate-simulator
-
-# собрать образ: docker-compose up --build (уберите флаг --build, чтобы образ не пересобирался каждый раз).
