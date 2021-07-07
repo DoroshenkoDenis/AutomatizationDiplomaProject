@@ -87,5 +87,4 @@ public class FunctionalTest {
         assertEquals("DECLINED",DataBaseHelper.getCreditBuyingStatus());
         DataBaseHelper.dropDataBase();
     }
-
 }
