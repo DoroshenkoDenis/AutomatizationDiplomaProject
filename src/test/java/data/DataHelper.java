@@ -112,10 +112,6 @@ public class DataHelper {
         return null;
     }
 
-    public static void main(String[] args) {
-        System.out.println(getCVC("random"));
-    }
-
     public static CardInfo getCardInfo(String cardStatus, String requiredLocale, String monthStatus, String yearStatus, String holderStatus, String cvcStatus) {
         return new CardInfo(
                 getNumber(cardStatus, requiredLocale),
