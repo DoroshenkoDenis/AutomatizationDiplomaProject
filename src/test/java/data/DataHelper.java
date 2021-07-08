@@ -112,13 +112,14 @@ public class DataHelper {
         if (status.equals("short")) {
             return String.valueOf(new Faker().number().numberBetween(0, 99));
         }
-        if (cvc.equals("000")) {
-            return "777";
-        }
-        if (cvc.equals("random")) {
+        if (status.equals("random")) {
             return cvc;
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(getCVC("random"));
     }
 
     public static CardInfo getCardInfo(String cardStatus, String requiredLocale, String dateMethod, String dateStatus, String badMonthStatus, String badYearStatus, String holderStatus, String cvcStatus) {
@@ -135,7 +136,7 @@ public class DataHelper {
 //-------------------------------------------------------------------------------------------------------------------------------------
 //           cardStatus:               |    "APPROVED", "DECLINED", "short", "one", "random" or nothing for "null"
 //           requiredLocale:           |    "en"
-//           dateMethod:               |    "getDate" (correct date) or nothing for a choice of an incorrect date
+//           dateMethod:               |    "getDate" (correct date) or nothing for a choice of an incorrect data
 //           dateStatus:               |    "past", "future" or nothing for a choice of a current date (if dateMethod = getDate)"
 //           badMonthStatus:           |    "zero", "doubleZero", "badRandom" (13-99) or nothing for "null" (if dateMethod != getDate)
 //           badYearStatus:            |    "zero", "doubleZero", "badRandom" (дата более пяти лет от текущей) or nothing for "null" (if dateMethod != getDate)

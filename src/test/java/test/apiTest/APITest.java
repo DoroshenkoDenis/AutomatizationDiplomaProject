@@ -17,8 +17,8 @@ public class APITest {
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         )
                 .then()
                 .statusCode(200)
@@ -35,8 +35,8 @@ public class APITest {
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         )
                 .then()
                 .statusCode(200)
@@ -53,8 +53,8 @@ public class APITest {
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         )
                 .then()
                 .statusCode(200)
@@ -71,8 +71,8 @@ public class APITest {
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         )
                 .then()
                 .statusCode(200)
@@ -83,14 +83,14 @@ public class APITest {
     @Test
     void debitBuyingByAnotherCard() {
         val response = APIHelper.debitBuying(
-                "random card number",
+                "random",
                 "en",
                 "getDate",
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         )
                 .then()
                 .statusCode(500)
@@ -101,14 +101,14 @@ public class APITest {
     @Test
     void creditBuyingByAnotherCard() {
         val response = APIHelper.creditBuying(
-                "random card number",
+                "random",
                 "en",
                 "getDate",
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         )
                 .then()
                 .statusCode(500)

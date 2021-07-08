@@ -3,6 +3,7 @@ package test.uiTest;
 import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import page.PaymentForm;
 import page.SalesPage;
 
 import java.time.Duration;
@@ -11,6 +12,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class FunctionalTest {
     SalesPage salesPage = new SalesPage();
+    PaymentForm paymentForm = new PaymentForm();
 
     @BeforeAll
     static void setUp() {
@@ -26,8 +28,8 @@ public class FunctionalTest {
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         );
         salesPage.getSuccessNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
@@ -41,8 +43,8 @@ public class FunctionalTest {
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         );
         salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
@@ -56,8 +58,8 @@ public class FunctionalTest {
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         );
         salesPage.getSuccessNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
@@ -71,8 +73,8 @@ public class FunctionalTest {
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         );
         salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
@@ -80,14 +82,14 @@ public class FunctionalTest {
     @Test
     void debitBuyingByAnotherCard() {
         salesPage.buyByDebit().buyWithCardInfo(
-                "random card number",
+                "random",
                 "en",
                 "getDate",
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         );
         salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
@@ -95,15 +97,22 @@ public class FunctionalTest {
     @Test
     void creditBuyingByAnotherCard() {
         salesPage.buyByCredit().buyWithCardInfo(
-                "random card number",
+                "random",
                 "en",
                 "getDate",
                 "future",
                 "no",
                 "no",
-                "ok",
-                "ok"
+                "goodName",
+                "random"
         );
         salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
+
+    @Test
+    void continueWithEmptyFields() {
+        salesPage.buyByDebit().moveWhichContinueButton();
+        paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
+    }
+
 }
