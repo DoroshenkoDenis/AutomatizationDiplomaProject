@@ -83,7 +83,7 @@ public class APITest {
     @Test
     void debitBuyingByAnotherCard() {
         val response = APIHelper.debitBuying(
-                "random",
+                "random card number",
                 "en",
                 "getDate",
                 "future",
@@ -101,7 +101,7 @@ public class APITest {
     @Test
     void creditBuyingByAnotherCard() {
         val response = APIHelper.creditBuying(
-                "random",
+                "random card number",
                 "en",
                 "getDate",
                 "future",
