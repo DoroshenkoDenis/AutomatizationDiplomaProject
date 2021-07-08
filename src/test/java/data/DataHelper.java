@@ -36,7 +36,10 @@ public class DataHelper {
         if (status.equals("one")) {
             return "4";
         }
-        return new Faker(new Locale(locale)).finance().creditCard();
+        if (status.equals("random")) {
+            return new Faker(new Locale(locale)).finance().creditCard();
+        }
+        return null;
     }
 
     private static String getFullName(String status) {
@@ -44,7 +47,10 @@ public class DataHelper {
         if (status.equals("badName")) {
             return faker.aquaTeenHungerForce().character() + " - " + faker.number().numberBetween(1, 999);
         }
+        if (status.equals("goodName")) {
         return new Faker().name().firstName().toUpperCase() + " " + new Faker().name().firstName().toUpperCase();
+        }
+        return null;
     }
 
     private static LocalDate getDate(String status) {
@@ -65,14 +71,23 @@ public class DataHelper {
         if (status.equals("doubleZero")) {
             return "00";
         }
-        return String.valueOf(faker.number().numberBetween(13, 99));
+        if (status.equals("badRandom")){
+            return String.valueOf(faker.number().numberBetween(13, 99));
+        }
+        return null;
     }
 
     private static String getBadYear(String status) {
         if (status.equals("zero")) {
             return "0";
         }
-        return "00";
+        if (status.equals("doubleZero")) {
+            return "00";
+        }
+        if (status.equals("badRandom")){
+            return LocalDate.now().plusMonths(new Faker().number().numberBetween(12 * 6, 12 * 9)).format(ofPattern("yy"));
+        }
+        return null;
     }
 
     private static String getMonth(String dateMethod, String dateStatus, String badMonthStatus) {
@@ -100,7 +115,10 @@ public class DataHelper {
         if (cvc.equals("000")) {
             return "777";
         }
-        return cvc;
+        if (cvc.equals("random")) {
+            return cvc;
+        }
+        return null;
     }
 
     public static CardInfo getCardInfo(String cardStatus, String requiredLocale, String dateMethod, String dateStatus, String badMonthStatus, String badYearStatus, String holderStatus, String cvcStatus) {
@@ -113,14 +131,15 @@ public class DataHelper {
         );
     }
 
-//             Statuses:
-//            "APPROVED, DECLINED, short, one or nothing for a random choice",
-//            "en",
-//            "getDate or nothing for a incorrect date",
-//            "past, future or nothing for choice a current date (if dateMethod = getDate)",
-//            "zero, doubleZero or nothing for choice an incorrect value (from 13 to 99) (if dateMethod != getDate)",
-//            "zero or nothing for choice a doubleZero value (if dateMethod != getDate)",
-//            "badName or nothing for choice a random correct name",
-//            "tripleZero, short or nothing for choice a random value"
+//           Statuses:
+//-------------------------------------------------------------------------------------------------------------------------------------
+//           cardStatus:               |    "APPROVED", "DECLINED", "short", "one", "random" or nothing for "null"
+//           requiredLocale:           |    "en"
+//           dateMethod:               |    "getDate" (correct date) or nothing for a choice of an incorrect date
+//           dateStatus:               |    "past", "future" or nothing for a choice of a current date (if dateMethod = getDate)"
+//           badMonthStatus:           |    "zero", "doubleZero", "badRandom" (13-99) or nothing for "null" (if dateMethod != getDate)
+//           badYearStatus:            |    "zero", "doubleZero", "badRandom" (дата более пяти лет от текущей) or nothing for "null" (if dateMethod != getDate)
+//           holderStatus:             |    "goodName (a random correct name), badName (a random incorrect name) or nothing for "null"
+//           cvcStatus:                |    "tripleZero", "short", "random" or nothing for "null"
 
 }
