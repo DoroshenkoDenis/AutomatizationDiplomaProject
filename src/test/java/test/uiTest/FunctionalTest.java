@@ -74,6 +74,36 @@ public class FunctionalTest {
                 "ok",
                 "ok"
         );
-        salesPage.getSuccessNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
+        salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
+    }
+
+    @Test
+    void debitBuyingByAnotherCard() {
+        salesPage.buyByDebit().buyWithCardInfo(
+                "random card number",
+                "en",
+                "getDate",
+                "future",
+                "no",
+                "no",
+                "ok",
+                "ok"
+        );
+        salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
+    }
+
+    @Test
+    void creditBuyingByAnotherCard() {
+        salesPage.buyByCredit().buyWithCardInfo(
+                "random card number",
+                "en",
+                "getDate",
+                "future",
+                "no",
+                "no",
+                "ok",
+                "ok"
+        );
+        salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
 }
