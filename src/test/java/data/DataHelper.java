@@ -124,7 +124,7 @@ public class DataHelper {
 
 }
 
-//           Statuses:
+//           List of Statuses:
 //-------------------------------------------------------------------------------------------------------------------------------------
 //           cardStatus:               |    "APPROVED", "DECLINED", "short", "one", "random" or nothing for "null"
 //           requiredLocale:           |    "en"
