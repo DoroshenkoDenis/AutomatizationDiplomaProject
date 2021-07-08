@@ -18,9 +18,9 @@ public class APIHelper {
             .log(LogDetail.ALL)
             .build();
 
-    public static Response debitBuying(String cardStatus, String requiredLocale, String dateMethod, String dateStatus, String badMonthStatus, String badYearStatus, String holderStatus, String cvcStatus) {
+    public static Response debitBuying(String cardStatus, String requiredLocale, String monthStatus, String yearStatus, String holderStatus, String cvcStatus) {
         Gson gson = new Gson();
-        String jsonUserData = gson.toJson(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus));
+        String jsonUserData = gson.toJson(DataHelper.getCardInfo(cardStatus, requiredLocale, monthStatus, yearStatus, holderStatus, cvcStatus));
         return given()
                 .spec(requestSpec)
                 .body(jsonUserData)
@@ -28,9 +28,9 @@ public class APIHelper {
                 .post("/api/v1/pay");
     }
 
-    public static Response creditBuying(String cardStatus, String requiredLocale, String dateMethod, String dateStatus, String badMonthStatus, String badYearStatus, String holderStatus, String cvcStatus) {
+    public static Response creditBuying(String cardStatus, String requiredLocale, String monthStatus, String yearStatus, String holderStatus, String cvcStatus) {
         Gson gson = new Gson();
-        String jsonUserData = gson.toJson(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus));
+        String jsonUserData = gson.toJson(DataHelper.getCardInfo(cardStatus, requiredLocale, monthStatus, yearStatus, holderStatus, cvcStatus));
         return given()
                 .spec(requestSpec)
                 .body(jsonUserData)

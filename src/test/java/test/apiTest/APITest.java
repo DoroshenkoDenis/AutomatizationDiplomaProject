@@ -13,10 +13,8 @@ public class APITest {
         val response = APIHelper.debitBuying(
                 "APPROVED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         )
@@ -31,10 +29,8 @@ public class APITest {
         val response = APIHelper.debitBuying(
                 "DECLINED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         )
@@ -49,10 +45,8 @@ public class APITest {
         val response = APIHelper.creditBuying(
                 "APPROVED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         )
@@ -67,10 +61,8 @@ public class APITest {
         val response = APIHelper.creditBuying(
                 "DECLINED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         )
@@ -85,10 +77,8 @@ public class APITest {
         val response = APIHelper.debitBuying(
                 "random",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         )
@@ -103,10 +93,8 @@ public class APITest {
         val response = APIHelper.creditBuying(
                 "random",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         )

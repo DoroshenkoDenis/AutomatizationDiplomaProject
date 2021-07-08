@@ -20,12 +20,10 @@ public class dbTest {
         val response = APIHelper.debitBuying(
                 "APPROVED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
-                "ok",
-                "ok"
+                "future",
+                "goodName",
+                "random"
         );
         assertEquals(4500000, DataBaseHelper.getAmountFromPaymentEntity());
         assertNotNull(DataBaseHelper.getCreatedDateFromPaymentEntity());
@@ -40,12 +38,10 @@ public class dbTest {
         val response = APIHelper.debitBuying(
                 "DECLINED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
-                "ok",
-                "ok"
+                "future",
+                "goodName",
+                "random"
         );
         assertEquals(4500000, DataBaseHelper.getAmountFromPaymentEntity());
         assertNotNull(DataBaseHelper.getCreatedDateFromPaymentEntity());
@@ -60,12 +56,10 @@ public class dbTest {
         val response = APIHelper.creditBuying(
                 "APPROVED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
-                "ok",
-                "ok"
+                "future",
+                "goodName",
+                "random"
         );
         assertNotNull(DataBaseHelper.getBankIdFromCreditRequestEntity());
         assertNotNull(DataBaseHelper.getCreatedDateFromCreditRequestEntity());
@@ -79,12 +73,10 @@ public class dbTest {
         val response = APIHelper.creditBuying(
                 "DECLINED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
-                "ok",
-                "ok"
+                "future",
+                "goodName",
+                "random"
         );
         assertNotNull(DataBaseHelper.getBankIdFromCreditRequestEntity());
         assertNotNull(DataBaseHelper.getCreatedDateFromCreditRequestEntity());

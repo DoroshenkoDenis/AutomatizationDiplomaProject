@@ -48,22 +48,12 @@ public class DataHelper {
             return faker.aquaTeenHungerForce().character() + " - " + faker.number().numberBetween(1, 999);
         }
         if (status.equals("goodName")) {
-        return new Faker().name().firstName().toUpperCase() + " " + new Faker().name().firstName().toUpperCase();
+            return new Faker().name().firstName().toUpperCase() + " " + new Faker().name().firstName().toUpperCase();
         }
         return null;
     }
 
-    private static LocalDate getDate(String status) {
-        if (status.equals("past")) {
-            return LocalDate.now().minusMonths(new Faker().number().numberBetween(1, 12 * 5));
-        }
-        if (status.equals("future")) {
-            return LocalDate.now().plusMonths(new Faker().number().numberBetween(1, 12 * 5));
-        }
-        return LocalDate.now();
-    }
-
-    private static String getBadMonth(String status) {
+    private static String getMonth(String status) {
         Faker faker = new Faker();
         if (status.equals("zero")) {
             return "0";
@@ -71,37 +61,41 @@ public class DataHelper {
         if (status.equals("doubleZero")) {
             return "00";
         }
-        if (status.equals("badRandom")){
+        if (status.equals("badRandom")) {
             return String.valueOf(faker.number().numberBetween(13, 99));
+        }
+        if (status.equals("current")) {
+            return LocalDate.now().format(ofPattern("MM"));
+        }
+        if (status.equals("past")) {
+            return LocalDate.now().minusMonths(1).format(ofPattern("MM"));
+        }
+        if (status.equals("future")) {
+            return LocalDate.now().plusMonths(1).format(ofPattern("MM"));
         }
         return null;
     }
 
-    private static String getBadYear(String status) {
+    private static String getYear(String status) {
         if (status.equals("zero")) {
             return "0";
         }
         if (status.equals("doubleZero")) {
             return "00";
         }
-        if (status.equals("badRandom")){
+        if (status.equals("badRandom")) {
             return LocalDate.now().plusMonths(new Faker().number().numberBetween(12 * 6, 12 * 9)).format(ofPattern("yy"));
         }
+        if (status.equals("current")) {
+            return LocalDate.now().format(ofPattern("yy"));
+        }
+        if (status.equals("past")) {
+            return LocalDate.now().minusYears(new Faker().number().numberBetween(1, 20)).format(ofPattern("yy"));
+        }
+        if (status.equals("future")) {
+            return LocalDate.now().plusMonths(new Faker().number().numberBetween(1, 12 * 5)).format(ofPattern("yy"));
+        }
         return null;
-    }
-
-    private static String getMonth(String dateMethod, String dateStatus, String badMonthStatus) {
-        if (dateMethod.equals("getDate")) {
-            return getDate(dateStatus).format(ofPattern("MM"));
-        }
-        return getBadMonth(badMonthStatus);
-    }
-
-    private static String getYear(String dateMethod, String dateStatus, String badYearStatus) {
-        if (dateMethod.equals("getDate")) {
-            return getDate(dateStatus).format(ofPattern("yy"));
-        }
-        return getBadYear(badYearStatus);
     }
 
     private static String getCVC(String status) {
@@ -122,25 +116,23 @@ public class DataHelper {
         System.out.println(getCVC("random"));
     }
 
-    public static CardInfo getCardInfo(String cardStatus, String requiredLocale, String dateMethod, String dateStatus, String badMonthStatus, String badYearStatus, String holderStatus, String cvcStatus) {
+    public static CardInfo getCardInfo(String cardStatus, String requiredLocale, String monthStatus, String yearStatus, String holderStatus, String cvcStatus) {
         return new CardInfo(
                 getNumber(cardStatus, requiredLocale),
-                getMonth(dateMethod, dateStatus, badMonthStatus),
-                getYear(dateMethod, dateStatus, badYearStatus),
+                getMonth(monthStatus),
+                getYear(yearStatus),
                 getFullName(holderStatus),
                 getCVC(cvcStatus)
         );
     }
 
+}
+
 //           Statuses:
 //-------------------------------------------------------------------------------------------------------------------------------------
 //           cardStatus:               |    "APPROVED", "DECLINED", "short", "one", "random" or nothing for "null"
 //           requiredLocale:           |    "en"
-//           dateMethod:               |    "getDate" (correct date) or nothing for a choice of an incorrect data
-//           dateStatus:               |    "past", "future" or nothing for a choice of a current date (if dateMethod = getDate)"
-//           badMonthStatus:           |    "zero", "doubleZero", "badRandom" (13-99) or nothing for "null" (if dateMethod != getDate)
-//           badYearStatus:            |    "zero", "doubleZero", "badRandom" (дата более пяти лет от текущей) or nothing for "null" (if dateMethod != getDate)
+//           monthStatus:              |    "current", "future", "past" "zero", "doubleZero", "badRandom" (13-99) or nothing for "null"
+//           yearStatus:               |    "current", "future", "past" "zero", "doubleZero", "badRandom" (дата более пяти лет от текущей) or nothing for "null"
 //           holderStatus:             |    "goodName (a random correct name), badName (a random incorrect name) or nothing for "null"
 //           cvcStatus:                |    "tripleZero", "short", "random" or nothing for "null"
-
-}

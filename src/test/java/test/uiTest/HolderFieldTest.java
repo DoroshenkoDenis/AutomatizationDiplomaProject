@@ -9,7 +9,7 @@ import page.SalesPage;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.sleep;
 
-public class CardNumberFieldTest {
+public class HolderFieldTest {
     PaymentForm paymentForm = new PaymentForm();
     SalesPage salesPage = new SalesPage();
 
@@ -19,41 +19,29 @@ public class CardNumberFieldTest {
     }
 
     @Test
-    void emptyCardNumberField() {
+    void emptyHolderField() {
         salesPage.buyByDebit().buyWithCardInfo(
+                "APPROVED",
+                "en",
+                "future",
+                "future",
                 "empty",
-                "en",
-                "future",
-                "future",
-                "goodName",
                 "random"
         );
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
     @Test
-    void shortNumberInCardNumberField() {
+    void badNameInHolderField() {
         salesPage.buyByDebit().buyWithCardInfo(
-                "short",
+                "APPROVED",
                 "en",
                 "future",
                 "future",
-                "goodName",
+                "badName",
                 "random"
         );
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
-    @Test
-    void oneNumberInCardNumberField() {
-        salesPage.buyByDebit().buyWithCardInfo(
-                "one",
-                "en",
-                "future",
-                "future",
-                "goodName",
-                "random"
-        );
-        paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
-    }
 }

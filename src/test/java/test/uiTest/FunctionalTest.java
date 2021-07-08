@@ -1,7 +1,7 @@
 package test.uiTest;
 
 import com.codeborne.selenide.Condition;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import page.PaymentForm;
 import page.SalesPage;
@@ -14,8 +14,8 @@ public class FunctionalTest {
     SalesPage salesPage = new SalesPage();
     PaymentForm paymentForm = new PaymentForm();
 
-    @BeforeAll
-    static void setUp() {
+    @BeforeEach
+    void setUp() {
         open("http://localhost:8080");
     }
 
@@ -24,10 +24,8 @@ public class FunctionalTest {
         salesPage.buyByDebit().buyWithCardInfo(
                 "APPROVED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         );
@@ -39,10 +37,8 @@ public class FunctionalTest {
         salesPage.buyByDebit().buyWithCardInfo(
                 "DECLINED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         );
@@ -54,10 +50,8 @@ public class FunctionalTest {
         salesPage.buyByCredit().buyWithCardInfo(
                 "APPROVED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         );
@@ -69,10 +63,8 @@ public class FunctionalTest {
         salesPage.buyByCredit().buyWithCardInfo(
                 "DECLINED",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         );
@@ -84,10 +76,8 @@ public class FunctionalTest {
         salesPage.buyByDebit().buyWithCardInfo(
                 "random",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         );
@@ -99,10 +89,8 @@ public class FunctionalTest {
         salesPage.buyByCredit().buyWithCardInfo(
                 "random",
                 "en",
-                "getDate",
                 "future",
-                "no",
-                "no",
+                "future",
                 "goodName",
                 "random"
         );

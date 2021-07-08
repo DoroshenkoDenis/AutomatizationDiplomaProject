@@ -17,20 +17,20 @@ public class PaymentForm {
     private final SelenideElement continueButton = $(byText("Продолжить"));
     private final SelenideElement wrongFormatNotification = $(".input__sub");
 
-    public void moveWhichContinueButton(){
+    public void moveWhichContinueButton() {
         continueButton.click();
     }
 
-    public void buyWithCardInfo(String cardStatus, String requiredLocale, String dateMethod, String dateStatus, String badMonthStatus, String badYearStatus, String holderStatus, String cvcStatus) {
-        cardNumberField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus)
+    public void buyWithCardInfo(String cardStatus, String requiredLocale, String monthStatus, String yearStatus, String holderStatus, String cvcStatus) {
+        cardNumberField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, monthStatus, yearStatus, holderStatus, cvcStatus)
                 .getNumber());
-        monthField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus)
+        monthField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, monthStatus, yearStatus, holderStatus, cvcStatus)
                 .getMonth());
-        yearField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus)
+        yearField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, monthStatus, yearStatus, holderStatus, cvcStatus)
                 .getYear());
-        holderField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus)
+        holderField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, monthStatus, yearStatus, holderStatus, cvcStatus)
                 .getCardHolder());
-        cvcField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, dateMethod, dateStatus, badMonthStatus, badYearStatus, holderStatus, cvcStatus)
+        cvcField.setValue(DataHelper.getCardInfo(cardStatus, requiredLocale, monthStatus, yearStatus, holderStatus, cvcStatus)
                 .getCvc());
         moveWhichContinueButton();
     }
