@@ -6,3 +6,9 @@
 
 
 [Test Plan](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/blob/master/TestPlan.md)
+___
+По умолчанию подключается MySQL.  
+Для работы с PostgreSQL:
+* перезапустить SUT `java -jar aqa-shop/aqa-shop.jar --spring.datasource.url=jdbc:postgresql://localhost:5432/app`
+* запустить тесты, используя PostgreSQL `gradlew clean test -Ddatasourse.url=postgresql.url -Dusername=app -Dpassword=pass`
+___
