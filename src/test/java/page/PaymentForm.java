@@ -15,7 +15,7 @@ public class PaymentForm {
     private final SelenideElement holderField = $$(".input__control").get(3);
     private final SelenideElement cvcField = $("[placeholder='999'");
     private final SelenideElement continueButton = $(byText("Продолжить"));
-    SelenideElement loadingSpinOnContinueButton = $(".spin");
+    private final SelenideElement loadingSpinOnContinueButton = $(".spin");
     private final SelenideElement wrongFormatNotification = $(".input__sub");
 
     public void moveWhichContinueButton() {
