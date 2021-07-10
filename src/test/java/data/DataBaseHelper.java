@@ -6,6 +6,7 @@ import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public class DataBaseHelper {
@@ -15,7 +16,7 @@ public class DataBaseHelper {
     @SneakyThrows
     public static Connection connection() {
         return DriverManager.getConnection
-                (System.getProperty("datasource.url", "jdbc:mysql://localhost:3306/app"),
+                (System.getProperty("datasource.url", "jdbc:postgresql://localhost:5432/app"),
                         System.getProperty("username", "app"),
                         System.getProperty("password", "pass")
                 );
@@ -27,8 +28,8 @@ public class DataBaseHelper {
     }
 
     @SneakyThrows
-    public static LocalDateTime getCreatedDateFromPaymentEntity() {
-        return runner.query(conn, "SELECT created FROM payment_entity", new ScalarHandler<>());
+    public static String getCreatedDateFromPaymentEntity() {
+        return runner.query(conn, "SELECT created FROM payment_entity", new ScalarHandler<>()).toString();
     }
 
     @SneakyThrows
@@ -47,8 +48,8 @@ public class DataBaseHelper {
     }
 
     @SneakyThrows
-    public static LocalDateTime getCreatedDateFromCreditRequestEntity() {
-        return runner.query(conn, "SELECT created FROM credit_request_entity", new ScalarHandler<>());
+    public static String getCreatedDateFromCreditRequestEntity() {
+        return runner.query(conn, "SELECT created FROM credit_request_entity", new ScalarHandler<>()).toString();
     }
 
     @SneakyThrows
@@ -57,8 +58,8 @@ public class DataBaseHelper {
     }
 
     @SneakyThrows
-    public static LocalDateTime getCreatedDateFromOrderEntity() {
-        return runner.query(conn, "SELECT created FROM order_entity", new ScalarHandler<>());
+    public static String getCreatedDateFromOrderEntity() {
+        return runner.query(conn, "SELECT created FROM order_entity", new ScalarHandler<>()).toString();
     }
 
     @SneakyThrows
