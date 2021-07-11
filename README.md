@@ -4,6 +4,8 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/kur6hbmt73uwwlcs/branch/master?svg=true)](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)   :octocat:   [![Gradle Package](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml)
 
 ___
+[Задание на дипломную работу профессии «Тестировщик»](https://github.com/netology-code/qa-diploma)
+___
 
 [Test Plan](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/blob/master/TestPlan.md)
 ___
