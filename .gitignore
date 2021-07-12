@@ -11,6 +11,9 @@ build/
 .springBeans
 .sts4-cache
 
+### Allure ###
+.allure
+
 ### IntelliJ IDEA ###
 .gradle
 .idea
