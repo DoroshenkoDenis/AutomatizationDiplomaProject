@@ -33,7 +33,7 @@ ___
 
 ### Отчёты Allure:
 * Запустить авто тесты командой  
-  `./gradlew gradlew  allureReport allureServe`
+  `./gradlew allureReport allureServe`
 
 ### По умолчанию подключается MySQL
 
