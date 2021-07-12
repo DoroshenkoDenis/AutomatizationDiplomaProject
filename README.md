@@ -21,12 +21,13 @@ ___
 ### Запуск:
 
 * Скачать код проекта с [репозитория](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject)
+* Открыть терминал в папке с проектом
 * Выполнить  
   `docker-compose up -d`
 * Запустить SUT aqa-shop.jar командой  
-  `java -jar aqa-shop/aqa-shop.jar`
+  `java -jar aqa-shop/aqa-shop.jar &`
 * Запустить авто тесты командой  
-  `gradlew clean test`
+  `./gradlew clean test --info -Dselenide.headless=true`
 
 ### По умолчанию подключается MySQL
 
