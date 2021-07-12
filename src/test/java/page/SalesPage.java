@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 @Data
 public class SalesPage {
-    private final SelenideElement body =$("body");
+    private final SelenideElement body = $("body");
     private final SelenideElement headTitle = $("title");
     private final SelenideElement debitBuyingButton = $(byText("Купить"));
     private final SelenideElement creditBuyingButton = $(byText("Купить в кредит"));

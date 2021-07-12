@@ -4,7 +4,6 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import data.APIHelper;
 import data.DataBaseHelper;
 import io.qameta.allure.selenide.AllureSelenide;
-import lombok.val;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,6 +12,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class dbTest {
+
+    @BeforeEach
+    void resetAll() {
+        new DataBaseHelper().dropAll();
+    }
 
     @BeforeAll
     static void setUpAll() {
@@ -24,14 +28,9 @@ public class dbTest {
         SelenideLogger.removeListener("allure");
     }
 
-    @BeforeEach
-    void resetAll() {
-        DataBaseHelper.dropDataBase();
-    }
-
     @Test
     void shouldFillInFieldsIfDebitBuyingByApprovedCard() {
-        val response = APIHelper.debitBuying(
+        APIHelper.debitBuying(
                 "APPROVED",
                 "en",
                 "future",
@@ -39,17 +38,17 @@ public class dbTest {
                 "goodName",
                 "random"
         );
-        assertEquals(4500000, DataBaseHelper.getAmountFromPaymentEntity());
-        assertNotNull(DataBaseHelper.getCreatedDateFromPaymentEntity());
-        assertEquals("APPROVED", DataBaseHelper.getStatusFromPaymentEntity());
-        assertNotNull(DataBaseHelper.getTransactionIdFromPaymentEntity());
-        assertNotNull(DataBaseHelper.getCreatedDateFromOrderEntity());
-        assertNotNull(DataBaseHelper.getPaymentIdFromOrderEntity());
+        assertEquals(4500000, DataBaseHelper.getPaymentEntityInfo().getAmountFromPaymentEntity());
+        assertNotNull(DataBaseHelper.getPaymentEntityInfo().getCreatedDateFromPaymentEntity());
+        assertEquals("APPROVED", DataBaseHelper.getPaymentEntityInfo().getStatusFromPaymentEntity());
+        assertNotNull(DataBaseHelper.getPaymentEntityInfo().getTransactionIdFromPaymentEntity());
+        assertNotNull(DataBaseHelper.getOrderEntityInfo().getCreatedDateFromOrderEntity());
+        assertNotNull(DataBaseHelper.getOrderEntityInfo().getPaymentIdFromOrderEntity());
     }
 
     @Test
     void shouldFillInFieldsIfDebitBuyingByDeclinedCard() {
-        val response = APIHelper.debitBuying(
+        APIHelper.debitBuying(
                 "DECLINED",
                 "en",
                 "future",
@@ -57,17 +56,17 @@ public class dbTest {
                 "goodName",
                 "random"
         );
-        assertEquals(4500000, DataBaseHelper.getAmountFromPaymentEntity());
-        assertNotNull(DataBaseHelper.getCreatedDateFromPaymentEntity());
-        assertEquals("DECLINED", DataBaseHelper.getStatusFromPaymentEntity());
-        assertNotNull(DataBaseHelper.getTransactionIdFromPaymentEntity());
-        assertNotNull(DataBaseHelper.getCreatedDateFromOrderEntity());
-        assertNotNull(DataBaseHelper.getPaymentIdFromOrderEntity());
+        assertEquals(4500000, DataBaseHelper.getPaymentEntityInfo().getAmountFromPaymentEntity());
+        assertNotNull(DataBaseHelper.getPaymentEntityInfo().getCreatedDateFromPaymentEntity());
+        assertEquals("DECLINED", DataBaseHelper.getPaymentEntityInfo().getStatusFromPaymentEntity());
+        assertNotNull(DataBaseHelper.getPaymentEntityInfo().getTransactionIdFromPaymentEntity());
+        assertNotNull(DataBaseHelper.getOrderEntityInfo().getCreatedDateFromOrderEntity());
+        assertNotNull(DataBaseHelper.getOrderEntityInfo().getPaymentIdFromOrderEntity());
     }
 
     @Test
     void shouldFillInFieldsIfCreditBuyingByApprovedCard() {
-        val response = APIHelper.creditBuying(
+        APIHelper.creditBuying(
                 "APPROVED",
                 "en",
                 "future",
@@ -75,16 +74,16 @@ public class dbTest {
                 "goodName",
                 "random"
         );
-        assertNotNull(DataBaseHelper.getBankIdFromCreditRequestEntity());
-        assertNotNull(DataBaseHelper.getCreatedDateFromCreditRequestEntity());
-        assertEquals("APPROVED", DataBaseHelper.getStatusFromCreditRequestEntity());
-        assertNotNull(DataBaseHelper.getCreatedDateFromOrderEntity());
-        assertNotNull(DataBaseHelper.getCreditIdFromOrderEntity());
+        assertNotNull(DataBaseHelper.getCreditRequestEntity().getBankIdFromCreditRequestEntity());
+        assertNotNull(DataBaseHelper.getCreditRequestEntity().getCreatedDateFromCreditRequestEntity());
+        assertEquals("APPROVED", DataBaseHelper.getCreditRequestEntity().getStatusFromCreditRequestEntity());
+        assertNotNull(DataBaseHelper.getOrderEntityInfo().getCreatedDateFromOrderEntity());
+        assertNotNull(DataBaseHelper.getOrderEntityInfo().getCreditIdFromOrderEntity());
     }
 
     @Test
     void shouldFillInFieldsIfCreditBuyingByDeclinedCard() {
-        val response = APIHelper.creditBuying(
+        APIHelper.creditBuying(
                 "DECLINED",
                 "en",
                 "future",
@@ -92,10 +91,10 @@ public class dbTest {
                 "goodName",
                 "random"
         );
-        assertNotNull(DataBaseHelper.getBankIdFromCreditRequestEntity());
-        assertNotNull(DataBaseHelper.getCreatedDateFromCreditRequestEntity());
-        assertEquals("DECLINED", DataBaseHelper.getStatusFromCreditRequestEntity());
-        assertNotNull(DataBaseHelper.getCreatedDateFromOrderEntity());
-        assertNotNull(DataBaseHelper.getCreditIdFromOrderEntity());
+        assertNotNull(DataBaseHelper.getCreditRequestEntity().getBankIdFromCreditRequestEntity());
+        assertNotNull(DataBaseHelper.getCreditRequestEntity().getCreatedDateFromCreditRequestEntity());
+        assertEquals("DECLINED", DataBaseHelper.getCreditRequestEntity().getStatusFromCreditRequestEntity());
+        assertNotNull(DataBaseHelper.getOrderEntityInfo().getCreatedDateFromOrderEntity());
+        assertNotNull(DataBaseHelper.getOrderEntityInfo().getCreditIdFromOrderEntity());
     }
 }

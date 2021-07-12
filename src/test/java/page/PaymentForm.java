@@ -12,7 +12,7 @@ public class PaymentForm {
     private final SelenideElement cardNumberField = $("[placeholder='0000 0000 0000 0000']");
     private final SelenideElement monthField = $("[placeholder='08']");
     private final SelenideElement yearField = $("[placeholder='22']");
-    private final SelenideElement holderField = $$(".input__control").get(3);
+    private final SelenideElement holderField = $(byText("Владелец")).parent().$(".input__control");
     private final SelenideElement cvcField = $("[placeholder='999'");
     private final SelenideElement continueButton = $(byText("Продолжить"));
     private final SelenideElement loadingSpinOnContinueButton = $(".spin");

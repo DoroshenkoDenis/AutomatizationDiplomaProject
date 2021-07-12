@@ -11,7 +11,6 @@ import page.PaymentForm;
 import page.SalesPage;
 
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.sleep;
 
 public class CardNumberFieldTest {
     PaymentForm paymentForm = new PaymentForm();

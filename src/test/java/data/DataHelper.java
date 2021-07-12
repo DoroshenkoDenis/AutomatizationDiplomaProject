@@ -9,11 +9,7 @@ import java.time.LocalDate;
 
 import static java.time.format.DateTimeFormatter.ofPattern;
 
-@Value
 public class DataHelper {
-
-    public DataHelper() {
-    }
 
     @Value
     public static class CardInfo {
