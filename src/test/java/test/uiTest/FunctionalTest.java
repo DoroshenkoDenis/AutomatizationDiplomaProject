@@ -1,6 +1,10 @@
 package test.uiTest;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import page.PaymentForm;
@@ -13,6 +17,16 @@ import static com.codeborne.selenide.Selenide.*;
 public class FunctionalTest {
     SalesPage salesPage = new SalesPage();
     PaymentForm paymentForm = new PaymentForm();
+
+    @BeforeAll
+    static void setUpAll() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+    }
+
+    @AfterAll
+    static void tearDownAll() {
+        SelenideLogger.removeListener("allure");
+    }
 
     @BeforeEach
     void setUp() {

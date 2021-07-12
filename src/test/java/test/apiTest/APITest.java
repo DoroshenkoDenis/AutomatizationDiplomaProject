@@ -1,12 +1,26 @@
 package test.apiTest;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
 import data.APIHelper;
+import io.qameta.allure.selenide.AllureSelenide;
 import lombok.val;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class APITest {
+
+    @BeforeAll
+    static void setUpAll() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+    }
+
+    @AfterAll
+    static void tearDownAll() {
+        SelenideLogger.removeListener("allure");
+    }
 
     @Test
     void debitBuyingByApprovedCard() {
