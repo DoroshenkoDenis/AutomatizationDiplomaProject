@@ -1,5 +1,6 @@
 package data;
 
+import com.github.javafaker.CreditCardType;
 import com.github.javafaker.Faker;
 import lombok.Value;
 
@@ -37,7 +38,7 @@ public class DataHelper {
             return "4";
         }
         if (status.equals("random")) {
-            return new Faker(new Locale(locale)).finance().creditCard();
+            return new Faker(new Locale(locale)).finance().creditCard(CreditCardType.MASTERCARD);
         }
         return null;
     }
