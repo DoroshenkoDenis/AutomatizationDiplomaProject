@@ -32,7 +32,7 @@ ___
   `./gradlew clean test --info -Dselenide.headless=true`
 
 ### Отчёты Allure:
-* Создать Allure и открыть в браузере   
+* Создать создать отчёты Allure и открыть в браузере   
   `./gradlew allureReport allureServe`
 
 ### По умолчанию подключается MySQL
