@@ -45,4 +45,4 @@ ___
 ___
 ## Test reports
 * [Gradel Test Summary](https://automatization-diploma-project-reports.vercel.app/)
-* [Allre Test Summary]()
+* [Allure Test Summary]()
