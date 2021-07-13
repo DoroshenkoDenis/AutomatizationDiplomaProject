@@ -41,6 +41,6 @@ ___
 * перезапустить SUT  
   `java -jar aqa-shop/aqa-shop.jar --spring.datasource.url=jdbc:postgresql://localhost:5432/app &`
 * запустить тесты, используя PostgreSQL  
-  `./gradlew clean test -Dpostgresql.url=jdbc:postgresql://localhost:5432/app -Dusername=app -Dpassword=pass --info -Dselenide.headless=true`
+  `./gradlew clean test -Ddatasourse.url=jdbc:postgresql://localhost:5432/app -Dusername=app -Dpassword=pass --info -Dselenide.headless=true`
 ___
 
