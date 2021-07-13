@@ -44,5 +44,5 @@ ___
   `./gradlew clean test -Dpostgresql.url=jdbc:postgresql://localhost:5432/app -Dusername=app -Dpassword=pass --info -Dselenide.headless=true`
 ___
 ## Test reports
-* [Gradel Test Summary](https://automatization-diploma-project-gradel-test-summary.vercel.app/)
+* [Gradel Test Summary](https://automatization-diploma-project-reports.vercel.app/)
 * [Allure Test Summary](https://automatization-diploma-project-allure-test-summary.vercel.app/)
