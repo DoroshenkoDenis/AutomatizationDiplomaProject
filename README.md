@@ -43,5 +43,6 @@ ___
 * запустить тесты, используя PostgreSQL  
   `./gradlew clean test -Dpostgresql.url=jdbc:postgresql://localhost:5432/app -Dusername=app -Dpassword=pass --info -Dselenide.headless=true`
 ___
-[Gradel Test Summary](https://automatization-diploma-project-reports.vercel.app/)
-[Allre Test Summary]()
+## Test reports
+* [Gradel Test Summary](https://automatization-diploma-project-reports.vercel.app/)
+* [Allre Test Summary]()
