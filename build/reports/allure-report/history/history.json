@@ -1,0 +1,788 @@
+{
+  "2c0caee4f20f7753f5b9044eee253cfc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9d9e97633b53f772",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205693006,
+        "stop" : 1626205693863,
+        "duration" : 857
+      }
+    } ]
+  },
+  "c4966246f76685c00e603eb287837a54" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b6cc6c63dd5c3ae2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205593037,
+        "stop" : 1626205593904,
+        "duration" : 867
+      }
+    } ]
+  },
+  "193c4e2f63abccde8ca4a485c9315c4a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fae1872c45c6239",
+      "status" : "failed",
+      "statusDetails" : "Element should have attribute text=\"Путешествие дня\" {title}\r\nElement: '<title displayed:false></title>'\r\nActual value: text=\"AQA: Заявка на карту\"\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626205592489.0.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626205592489.0.html\r\nTimeout: 4 s.",
+      "time" : {
+        "start" : 1626205588338,
+        "stop" : 1626205592746,
+        "duration" : 4408
+      }
+    } ]
+  },
+  "665d7af4117a113767de1d4e5218e73a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7e63948d0d903b42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205666672,
+        "stop" : 1626205667510,
+        "duration" : 838
+      }
+    } ]
+  },
+  "2ce726d0ef1dcf618b6fb627bbcf357d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d3c1d52c9335bfaa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205689374,
+        "stop" : 1626205690238,
+        "duration" : 864
+      }
+    } ]
+  },
+  "26eb64da58066ca5573e80fce66e7c72" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8bf6eb0333a5c675",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205668397,
+        "stop" : 1626205669243,
+        "duration" : 846
+      }
+    } ]
+  },
+  "8e8f5b72fa042126906b44fc483b5db2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f69501ef53d77a66",
+      "status" : "failed",
+      "statusDetails" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626205661205.3.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626205661205.3.html\r\nTimeout: 15 s.",
+      "time" : {
+        "start" : 1626205645209,
+        "stop" : 1626205661461,
+        "duration" : 16252
+      }
+    } ]
+  },
+  "4fd5a57dd8b1593a86b93fba228e3fd7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1a4b9043c6c9c50a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205594743,
+        "stop" : 1626205595560,
+        "duration" : 817
+      }
+    } ]
+  },
+  "46ff1b764a434d5cba1e99cdfbc7a1ab" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fce5b72099bd71d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205583705,
+        "stop" : 1626205583828,
+        "duration" : 123
+      }
+    } ]
+  },
+  "2ab753da840d230648ed99fef11eb2e9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6844f259dffee506",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205636177,
+        "stop" : 1626205645203,
+        "duration" : 9026
+      }
+    } ]
+  },
+  "9e3bd625109d9295330876c3e432b06b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "782f34099ad43257",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205584761,
+        "stop" : 1626205588277,
+        "duration" : 3516
+      }
+    } ]
+  },
+  "a77e5d83b8c7457b3708513d56e45d76" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "32455207a6607254",
+      "status" : "failed",
+      "statusDetails" : "Element not found {.input__sub}\r\nExpected: visible\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626205602494.1.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626205602494.1.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "time" : {
+        "start" : 1626205597419,
+        "stop" : 1626205602754,
+        "duration" : 5335
+      }
+    } ]
+  },
+  "cd2e86dd857d30c6ef6cb1b350ba50bb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "89ef7802feccdbf7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205584414,
+        "stop" : 1626205584520,
+        "duration" : 106
+      }
+    } ]
+  },
+  "9d071f3c63f62f8946d0ed3cf0969727" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b07bdd190652005f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205691083,
+        "stop" : 1626205692013,
+        "duration" : 930
+      }
+    } ]
+  },
+  "fa2452470ea153304fd4fb98b0b684eb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "89a5ed2ca2325f78",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205583548,
+        "stop" : 1626205583702,
+        "duration" : 154
+      }
+    } ]
+  },
+  "a51db2c5d1c11b25810eb800e4940780" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c4ce99da9e294978",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205583899,
+        "stop" : 1626205583977,
+        "duration" : 78
+      }
+    } ]
+  },
+  "4f2fe4f778a5329e1ed953ae168d0778" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "744ca5403527326d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205680412,
+        "stop" : 1626205688308,
+        "duration" : 7896
+      }
+    } ]
+  },
+  "492b3a72aed67ec26fca8c6952453c46" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "622e52aa36742dc9",
+      "status" : "failed",
+      "statusDetails" : "Element not found {.input__sub}\r\nExpected: visible\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626205666379.4.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626205666379.4.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "time" : {
+        "start" : 1626205661465,
+        "stop" : 1626205666670,
+        "duration" : 5205
+      }
+    } ]
+  },
+  "b76c79aefab87f43d665eab216fbf0bf" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1e08fff59c33b12f",
+      "status" : "failed",
+      "statusDetails" : "expected: not <null>",
+      "time" : {
+        "start" : 1626205583984,
+        "stop" : 1626205584226,
+        "duration" : 242
+      }
+    } ]
+  },
+  "b965792e7afb7c2030001c7e4a9d916" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "30328c280419f669",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205593908,
+        "stop" : 1626205594728,
+        "duration" : 820
+      }
+    } ]
+  },
+  "91b1a459889ef27f2680b57fe09df247" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7285b5e46a87c8c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205693865,
+        "stop" : 1626205694710,
+        "duration" : 845
+      }
+    } ]
+  },
+  "fbb8c3a4115524717e2f4fdaf6bba163" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "adc38f18717df316",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205614186,
+        "stop" : 1626205619783,
+        "duration" : 5597
+      }
+    } ]
+  },
+  "2474eb2faef3d797409ff313623c7a94" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9ffda51aa8a2a49a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205592881,
+        "stop" : 1626205593016,
+        "duration" : 135
+      }
+    } ]
+  },
+  "709ce289e52a1cfbf2657b7453417e04" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "53c8ea2ddfcbdd00",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205602759,
+        "stop" : 1626205610816,
+        "duration" : 8057
+      }
+    } ]
+  },
+  "667abf58d4ff002fadef6c0fde2ee57e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "40ffe863596a7fb7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205583830,
+        "stop" : 1626205583897,
+        "duration" : 67
+      }
+    } ]
+  },
+  "606a6fdcc3ae4dd5922f2d3104f07bc8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "408818528e2495b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205595564,
+        "stop" : 1626205596384,
+        "duration" : 820
+      }
+    } ]
+  },
+  "51931fe3cbab3710db5d08cf6c4ad12d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9348e64d9a2138a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205635973,
+        "stop" : 1626205636175,
+        "duration" : 202
+      }
+    } ]
+  },
+  "25bb4ead65f550a2f4130a3a9dbf38e3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6efc554be22289a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205583352,
+        "stop" : 1626205583538,
+        "duration" : 186
+      }
+    } ]
+  },
+  "ca6b27cf9fb793b2311f00c6b93225a1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1c1533220733fee9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205580956,
+        "stop" : 1626205583256,
+        "duration" : 2300
+      }
+    } ]
+  },
+  "1fc1ba1735a9637030e95b2013db4b33" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d91c35a592e33cd9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205584523,
+        "stop" : 1626205584630,
+        "duration" : 107
+      }
+    } ]
+  },
+  "ee978425b50adaec8815f2737c8b427d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3e9ec8115f7ead4",
+      "status" : "failed",
+      "statusDetails" : "expected: not <null>",
+      "time" : {
+        "start" : 1626205584231,
+        "stop" : 1626205584408,
+        "duration" : 177
+      }
+    } ]
+  },
+  "bacb5b8dd6b984b64e4f272e56d3a98e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d2db102ef446f924",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205667513,
+        "stop" : 1626205668395,
+        "duration" : 882
+      }
+    } ]
+  },
+  "35fa385d85ec4809f79522e64a9cf65c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b772a39e03bc0c19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205596386,
+        "stop" : 1626205597417,
+        "duration" : 1031
+      }
+    } ]
+  },
+  "a0033b7af900dedbffc26d6f51b30873" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b94bb805b917433a",
+      "status" : "failed",
+      "statusDetails" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626205635750.2.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626205635750.2.html\r\nTimeout: 15 s.",
+      "time" : {
+        "start" : 1626205619786,
+        "stop" : 1626205635970,
+        "duration" : 16184
+      }
+    } ]
+  },
+  "f3c13604f002ecf1ed8bea44bb66470a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "701af895ec590959",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205688317,
+        "stop" : 1626205689372,
+        "duration" : 1055
+      }
+    } ]
+  },
+  "6dc29a3f994a6fe4136fccd378eced70" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5a35240d95ca69a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205669245,
+        "stop" : 1626205679398,
+        "duration" : 10153
+      }
+    } ]
+  },
+  "fea648fd8e493fbbbf48ebfe0f82afb1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ab78e040951aa299",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205692016,
+        "stop" : 1626205693005,
+        "duration" : 989
+      }
+    } ]
+  },
+  "27f3aedea6afe2da28697d4104ae8cbe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "598967db5c4b9688",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205690242,
+        "stop" : 1626205691081,
+        "duration" : 839
+      }
+    } ]
+  },
+  "73458045031d42cea1a15ca248c024b2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6e00d331580e3879",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205679405,
+        "stop" : 1626205680411,
+        "duration" : 1006
+      }
+    } ]
+  },
+  "96e0f186c2e6d99f945ddcdadcb1ad5d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bf1c67a85d9c2c31",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205610825,
+        "stop" : 1626205614184,
+        "duration" : 3359
+      }
+    } ]
+  },
+  "d45748abb682e5c7ea76bb99dd828219" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b58805d917ea9e92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626205592749,
+        "stop" : 1626205592879,
+        "duration" : 130
+      }
+    } ]
+  }
+}

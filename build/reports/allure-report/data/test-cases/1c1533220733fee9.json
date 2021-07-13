@@ -1,0 +1,57 @@
+{
+  "uid" : "1c1533220733fee9",
+  "name" : "creditBuyingByAnotherCard()",
+  "fullName" : "test.apiTest.APITest.creditBuyingByAnotherCard",
+  "historyId" : "ca6b27cf9fb793b2311f00c6b93225a1",
+  "time" : {
+    "start" : 1626205580956,
+    "stop" : 1626205583256,
+    "duration" : 2300
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-P6NBLT8"
+  }, {
+    "name" : "thread",
+    "value" : "9864@DESKTOP-P6NBLT8.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "test.apiTest.APITest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.apiTest.APITest"
+  }, {
+    "name" : "testMethod",
+    "value" : "creditBuyingByAnotherCard"
+  }, {
+    "name" : "suite",
+    "value" : "test.apiTest.APITest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1c1533220733fee9.json",
+  "parameterValues" : [ ]
+}

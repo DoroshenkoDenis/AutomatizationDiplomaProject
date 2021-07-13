@@ -1,0 +1,57 @@
+{
+  "uid" : "89a5ed2ca2325f78",
+  "name" : "debitBuyingByAnotherCard()",
+  "fullName" : "test.apiTest.APITest.debitBuyingByAnotherCard",
+  "historyId" : "fa2452470ea153304fd4fb98b0b684eb",
+  "time" : {
+    "start" : 1626205583548,
+    "stop" : 1626205583702,
+    "duration" : 154
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-P6NBLT8"
+  }, {
+    "name" : "thread",
+    "value" : "9864@DESKTOP-P6NBLT8.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "test.apiTest.APITest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.apiTest.APITest"
+  }, {
+    "name" : "testMethod",
+    "value" : "debitBuyingByAnotherCard"
+  }, {
+    "name" : "suite",
+    "value" : "test.apiTest.APITest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "89a5ed2ca2325f78.json",
+  "parameterValues" : [ ]
+}

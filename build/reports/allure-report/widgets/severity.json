@@ -1,0 +1,411 @@
+[ {
+  "uid" : "782f34099ad43257",
+  "name" : "sendingVisualizationTest()",
+  "time" : {
+    "start" : 1626205584761,
+    "stop" : 1626205588277,
+    "duration" : 3516
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "622e52aa36742dc9",
+  "name" : "badNameInHolderField()",
+  "time" : {
+    "start" : 1626205661465,
+    "stop" : 1626205666670,
+    "duration" : 5205
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "701af895ec590959",
+  "name" : "zeroDigitInMonthField()",
+  "time" : {
+    "start" : 1626205688317,
+    "stop" : 1626205689372,
+    "duration" : 1055
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b07bdd190652005f",
+  "name" : "pastDateInYearFieldAndCurrentDateInMonthField()",
+  "time" : {
+    "start" : 1626205691083,
+    "stop" : 1626205692013,
+    "duration" : 930
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ffda51aa8a2a49a",
+  "name" : "debitHeadingTitleTest()",
+  "time" : {
+    "start" : 1626205592881,
+    "stop" : 1626205593016,
+    "duration" : 135
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ab78e040951aa299",
+  "name" : "badRandomDigitInYearField()",
+  "time" : {
+    "start" : 1626205692016,
+    "stop" : 1626205693005,
+    "duration" : 989
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "408818528e2495b8",
+  "name" : "emptyCVCNumberField()",
+  "time" : {
+    "start" : 1626205595564,
+    "stop" : 1626205596384,
+    "duration" : 820
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7285b5e46a87c8c0",
+  "name" : "emptyYearField()",
+  "time" : {
+    "start" : 1626205693865,
+    "stop" : 1626205694710,
+    "duration" : 845
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6844f259dffee506",
+  "name" : "debitBuyingByApprovedCard()",
+  "time" : {
+    "start" : 1626205636177,
+    "stop" : 1626205645203,
+    "duration" : 9026
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "adc38f18717df316",
+  "name" : "debitBuyingByAnotherCard()",
+  "time" : {
+    "start" : 1626205614186,
+    "stop" : 1626205619783,
+    "duration" : 5597
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6efc554be22289a8",
+  "name" : "creditBuyingByApprovedCard()",
+  "time" : {
+    "start" : 1626205583352,
+    "stop" : 1626205583538,
+    "duration" : 186
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4ce99da9e294978",
+  "name" : "creditBuyingByDeclinedCard()",
+  "time" : {
+    "start" : 1626205583899,
+    "stop" : 1626205583977,
+    "duration" : 78
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "30328c280419f669",
+  "name" : "shortNumberInCardNumberField()",
+  "time" : {
+    "start" : 1626205593908,
+    "stop" : 1626205594728,
+    "duration" : 820
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2db102ef446f924",
+  "name" : "badRandomDigitInMonthField()",
+  "time" : {
+    "start" : 1626205667513,
+    "stop" : 1626205668395,
+    "duration" : 882
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89ef7802feccdbf7",
+  "name" : "Проверка заполнения полей таблиц при покупке картой со статусом DECLINED",
+  "time" : {
+    "start" : 1626205584414,
+    "stop" : 1626205584520,
+    "duration" : 106
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b94bb805b917433a",
+  "name" : "debitBuyingByDeclinedCard()",
+  "time" : {
+    "start" : 1626205619786,
+    "stop" : 1626205635970,
+    "duration" : 16184
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c1533220733fee9",
+  "name" : "creditBuyingByAnotherCard()",
+  "time" : {
+    "start" : 1626205580956,
+    "stop" : 1626205583256,
+    "duration" : 2300
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e08fff59c33b12f",
+  "name" : "Проверка заполнения полей таблиц при покупке в кредит картой со статусом DECLINED",
+  "time" : {
+    "start" : 1626205583984,
+    "stop" : 1626205584226,
+    "duration" : 242
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "bf1c67a85d9c2c31",
+  "name" : "creditBuyingByApprovedCard()",
+  "time" : {
+    "start" : 1626205610825,
+    "stop" : 1626205614184,
+    "duration" : 3359
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fce5b72099bd71d",
+  "name" : "debitBuyingByDeclinedCard()",
+  "time" : {
+    "start" : 1626205583705,
+    "stop" : 1626205583828,
+    "duration" : 123
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8bf6eb0333a5c675",
+  "name" : "emptyMonthField()",
+  "time" : {
+    "start" : 1626205668397,
+    "stop" : 1626205669243,
+    "duration" : 846
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a4b9043c6c9c50a",
+  "name" : "emptyCardNumberField()",
+  "time" : {
+    "start" : 1626205594743,
+    "stop" : 1626205595560,
+    "duration" : 817
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40ffe863596a7fb7",
+  "name" : "debitBuyingByApprovedCard()",
+  "time" : {
+    "start" : 1626205583830,
+    "stop" : 1626205583897,
+    "duration" : 67
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f69501ef53d77a66",
+  "name" : "creditBuyingByDeclinedCard()",
+  "time" : {
+    "start" : 1626205645209,
+    "stop" : 1626205661461,
+    "duration" : 16252
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "fae1872c45c6239",
+  "name" : "headTitleTest()",
+  "time" : {
+    "start" : 1626205588338,
+    "stop" : 1626205592746,
+    "duration" : 4408
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e63948d0d903b42",
+  "name" : "emptyHolderField()",
+  "time" : {
+    "start" : 1626205666672,
+    "stop" : 1626205667510,
+    "duration" : 838
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d9e97633b53f772",
+  "name" : "doubleZeroDigitInYearField()",
+  "time" : {
+    "start" : 1626205693006,
+    "stop" : 1626205693863,
+    "duration" : 857
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53c8ea2ddfcbdd00",
+  "name" : "creditBuyingByAnotherCard()",
+  "time" : {
+    "start" : 1626205602759,
+    "stop" : 1626205610816,
+    "duration" : 8057
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e9ec8115f7ead4",
+  "name" : "Проверка заполнения полей таблиц при покупке в кредит картой со статусом APPROVED",
+  "time" : {
+    "start" : 1626205584231,
+    "stop" : 1626205584408,
+    "duration" : 177
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9348e64d9a2138a9",
+  "name" : "continueWithEmptyFields()",
+  "time" : {
+    "start" : 1626205635973,
+    "stop" : 1626205636175,
+    "duration" : 202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b58805d917ea9e92",
+  "name" : "creditHeadTitleTest()",
+  "time" : {
+    "start" : 1626205592749,
+    "stop" : 1626205592879,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d91c35a592e33cd9",
+  "name" : "Проверка заполнения полей таблиц при покупке картой со статусом APPROVED",
+  "time" : {
+    "start" : 1626205584523,
+    "stop" : 1626205584630,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89a5ed2ca2325f78",
+  "name" : "debitBuyingByAnotherCard()",
+  "time" : {
+    "start" : 1626205583548,
+    "stop" : 1626205583702,
+    "duration" : 154
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b772a39e03bc0c19",
+  "name" : "shortNumberInCVCNumberField()",
+  "time" : {
+    "start" : 1626205596386,
+    "stop" : 1626205597417,
+    "duration" : 1031
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e00d331580e3879",
+  "name" : "doubleZeroDigitInMonthField()",
+  "time" : {
+    "start" : 1626205679405,
+    "stop" : 1626205680411,
+    "duration" : 1006
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6cc6c63dd5c3ae2",
+  "name" : "oneNumberInCardNumberField()",
+  "time" : {
+    "start" : 1626205593037,
+    "stop" : 1626205593904,
+    "duration" : 867
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "598967db5c4b9688",
+  "name" : "zeroDigitInYearField()",
+  "time" : {
+    "start" : 1626205690242,
+    "stop" : 1626205691081,
+    "duration" : 839
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3c1d52c9335bfaa",
+  "name" : "pastDateInMonthFieldAndCurrentDateInYearField()",
+  "time" : {
+    "start" : 1626205689374,
+    "stop" : 1626205690238,
+    "duration" : 864
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "32455207a6607254",
+  "name" : "tripleZeroInCVCNumberField()",
+  "time" : {
+    "start" : 1626205597419,
+    "stop" : 1626205602754,
+    "duration" : 5335
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a35240d95ca69a7",
+  "name" : "currentDateInMonthAndYearFields()",
+  "time" : {
+    "start" : 1626205669245,
+    "stop" : 1626205679398,
+    "duration" : 10153
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "744ca5403527326d",
+  "name" : "futureDateInMonthFieldAndCurrentDateInYearField()",
+  "time" : {
+    "start" : 1626205680412,
+    "stop" : 1626205688308,
+    "duration" : 7896
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
