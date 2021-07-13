@@ -4,10 +4,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import data.APIHelper;
 import data.DataBaseHelper;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -29,6 +26,7 @@ public class dbTest {
     }
 
     @Test
+    @DisplayName("Проверка заполнения в БД полей таблиц при покупке картой со статусом APPROVED")
     void shouldFillInFieldsIfDebitBuyingByApprovedCard() {
         APIHelper.debitBuying(
                 "APPROVED",
@@ -47,6 +45,7 @@ public class dbTest {
     }
 
     @Test
+    @DisplayName("Проверка заполнения в БД полей таблиц при покупке картой со статусом DECLINED")
     void shouldFillInFieldsIfDebitBuyingByDeclinedCard() {
         APIHelper.debitBuying(
                 "DECLINED",
@@ -65,6 +64,7 @@ public class dbTest {
     }
 
     @Test
+    @DisplayName("Проверка заполнения в БД полей таблиц при покупке в кредит картой со статусом APPROVED")
     void shouldFillInFieldsIfCreditBuyingByApprovedCard() {
         APIHelper.creditBuying(
                 "APPROVED",
@@ -82,6 +82,7 @@ public class dbTest {
     }
 
     @Test
+    @DisplayName("Проверка заполнения в БД полей таблиц при покупке в кредит картой со статусом DECLINED")
     void shouldFillInFieldsIfCreditBuyingByDeclinedCard() {
         APIHelper.creditBuying(
                 "DECLINED",
