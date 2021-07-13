@@ -48,7 +48,7 @@ gate-simulator/node_modules
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
-
+!**/build/reports/tests/test/**
 
 ### Поскольку файлы с расширением .jar находят в списках .gitignore вам
 ### нужно принудительно заставить git следить за ним:

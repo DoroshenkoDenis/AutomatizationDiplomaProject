@@ -41,4 +41,6 @@ dependencies {
 test {
     useJUnitPlatform()
     systemProperty 'selenide.headless', System.getProperty('selenide.headless')
+    systemProperty 'postgresql.url', System.getProperty('postgresql.url')
+//  username and password set by default in DataBaseHelper
 }

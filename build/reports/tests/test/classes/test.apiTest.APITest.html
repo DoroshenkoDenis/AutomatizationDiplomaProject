@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - APITest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>APITest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/test.apiTest.html">test.apiTest</a> &gt; APITest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.195s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">creditBuyingByAnotherCard()</td>
+<td class="success">1.783s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">creditBuyingByApprovedCard()</td>
+<td class="success">0.089s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">creditBuyingByDeclinedCard()</td>
+<td class="success">0.071s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">debitBuyingByAnotherCard()</td>
+<td class="success">0.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">debitBuyingByApprovedCard()</td>
+<td class="success">0.046s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">debitBuyingByDeclinedCard()</td>
+<td class="success">0.105s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	POST
+Request URI:	http://localhost:8080/api/v1/credit
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;number&quot;: &quot;6771-8993-5122-2087&quot;,
+    &quot;month&quot;: &quot;08&quot;,
+    &quot;year&quot;: &quot;23&quot;,
+    &quot;cardHolder&quot;: &quot;ULRIKE ABRAHAM&quot;,
+    &quot;cvc&quot;: &quot;593&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/credit
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;number&quot;: &quot;4444 4444 4444 4441&quot;,
+    &quot;month&quot;: &quot;08&quot;,
+    &quot;year&quot;: &quot;26&quot;,
+    &quot;cardHolder&quot;: &quot;JOHNNIE SHELBY&quot;,
+    &quot;cvc&quot;: &quot;637&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/pay
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;number&quot;: &quot;6771-8992-0372-9115&quot;,
+    &quot;month&quot;: &quot;08&quot;,
+    &quot;year&quot;: &quot;25&quot;,
+    &quot;cardHolder&quot;: &quot;MARION KORY&quot;,
+    &quot;cvc&quot;: &quot;552&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/pay
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;number&quot;: &quot;4444 4444 4444 4442&quot;,
+    &quot;month&quot;: &quot;08&quot;,
+    &quot;year&quot;: &quot;25&quot;,
+    &quot;cardHolder&quot;: &quot;DEL CARROL&quot;,
+    &quot;cvc&quot;: &quot;046&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/pay
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;number&quot;: &quot;4444 4444 4444 4441&quot;,
+    &quot;month&quot;: &quot;08&quot;,
+    &quot;year&quot;: &quot;22&quot;,
+    &quot;cardHolder&quot;: &quot;MELISSA TERISA&quot;,
+    &quot;cvc&quot;: &quot;626&quot;
+}
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/credit
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;number&quot;: &quot;4444 4444 4444 4442&quot;,
+    &quot;month&quot;: &quot;08&quot;,
+    &quot;year&quot;: &quot;26&quot;,
+    &quot;cardHolder&quot;: &quot;AUBREY TOD&quot;,
+    &quot;cvc&quot;: &quot;177&quot;
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at 13 июл. 2021 г., 21:31:32</p>
+</div>
+</div>
+</body>
+</html>
