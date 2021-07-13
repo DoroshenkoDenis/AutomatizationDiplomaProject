@@ -19,7 +19,7 @@ public class DataBaseHelper {
     @SneakyThrows
     private static Connection connection() {
         return DriverManager.getConnection
-                (System.getProperty("datasource.url", "jdbc:mysql://localhost:3306/app"),
+                (System.getProperty("postgresql.url", "jdbc:mysql://localhost:3306/app"),
                         System.getProperty("username", "app"),
                         System.getProperty("password", "pass")
                 );
