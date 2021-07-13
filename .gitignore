@@ -49,7 +49,7 @@ gate-simulator/node_modules
 !**/src/main/**
 !**/src/test/**
 !**/build/reports/tests/test/**
-
+!**/build/reports/allure-report/**
 ### Поскольку файлы с расширением .jar находят в списках .gitignore вам
 ### нужно принудительно заставить git следить за ним:
 ### git add -f artifacts/app-name.jar

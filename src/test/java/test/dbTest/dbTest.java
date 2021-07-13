@@ -8,6 +8,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("Тестирование базы данных")
 public class dbTest {
 
     @BeforeEach
@@ -26,7 +27,7 @@ public class dbTest {
     }
 
     @Test
-    @DisplayName("Проверка заполнения в БД полей таблиц при покупке картой со статусом APPROVED")
+    @DisplayName("Проверка заполнения полей таблиц при покупке картой со статусом APPROVED")
     void shouldFillInFieldsIfDebitBuyingByApprovedCard() {
         APIHelper.debitBuying(
                 "APPROVED",
@@ -45,7 +46,7 @@ public class dbTest {
     }
 
     @Test
-    @DisplayName("Проверка заполнения в БД полей таблиц при покупке картой со статусом DECLINED")
+    @DisplayName("Проверка заполнения полей таблиц при покупке картой со статусом DECLINED")
     void shouldFillInFieldsIfDebitBuyingByDeclinedCard() {
         APIHelper.debitBuying(
                 "DECLINED",
@@ -64,7 +65,7 @@ public class dbTest {
     }
 
     @Test
-    @DisplayName("Проверка заполнения в БД полей таблиц при покупке в кредит картой со статусом APPROVED")
+    @DisplayName("Проверка заполнения полей таблиц при покупке в кредит картой со статусом APPROVED")
     void shouldFillInFieldsIfCreditBuyingByApprovedCard() {
         APIHelper.creditBuying(
                 "APPROVED",
@@ -82,7 +83,7 @@ public class dbTest {
     }
 
     @Test
-    @DisplayName("Проверка заполнения в БД полей таблиц при покупке в кредит картой со статусом DECLINED")
+    @DisplayName("Проверка заполнения полей таблиц при покупке в кредит картой со статусом DECLINED")
     void shouldFillInFieldsIfCreditBuyingByDeclinedCard() {
         APIHelper.creditBuying(
                 "DECLINED",
