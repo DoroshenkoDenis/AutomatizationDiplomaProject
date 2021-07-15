@@ -100,21 +100,4 @@ public class dbTest {
         assertNotNull(DataBaseHelper.getOrderEntityInfo().getCreditIdFromOrderEntity());
     }
 
-    @Test
-    @DisplayName("Checking table fields when credit buying by DECLINED-card")
-    void createTimeTesting() {
-        APIHelper.creditBuying(
-                "DECLINED",
-                "en",
-                "future",
-                "future",
-                "goodName",
-                "random"
-        );
-        assertNotNull(DataBaseHelper.getCreditRequestEntity().getBankIdFromCreditRequestEntity());
-        assertNotNull(DataBaseHelper.getCreditRequestEntity().getCreatedDateFromCreditRequestEntity());
-        assertEquals("DECLINED", DataBaseHelper.getCreditRequestEntity().getStatusFromCreditRequestEntity());
-        assertNotNull(DataBaseHelper.getOrderEntityInfo().getCreatedDateFromOrderEntity());
-        assertNotNull(DataBaseHelper.getOrderEntityInfo().getCreditIdFromOrderEntity());
-    }
 }

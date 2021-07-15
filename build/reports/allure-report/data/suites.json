@@ -1,81 +1,82 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
   "children" : [ {
     "name" : "API testing",
     "children" : [ {
       "name" : "Credit buying by Random-card",
-      "uid" : "6b5eabde3e2d557f",
+      "uid" : "882f8dad4566d116",
       "parentUid" : "6a5a2bc4c39354cd0a99938f20154cc8",
       "status" : "passed",
       "time" : {
-        "start" : 1626333188275,
-        "stop" : 1626333190182,
-        "duration" : 1907
+        "start" : 1626334759062,
+        "stop" : 1626334760797,
+        "duration" : 1735
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Credit buying by APPROVED-card",
-      "uid" : "8ac9b3ff90cad76c",
+      "uid" : "7e736a513b86d45a",
       "parentUid" : "6a5a2bc4c39354cd0a99938f20154cc8",
       "status" : "passed",
       "time" : {
-        "start" : 1626333190260,
-        "stop" : 1626333190432,
-        "duration" : 172
+        "start" : 1626334760860,
+        "stop" : 1626334760972,
+        "duration" : 112
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Debit buying by Random-card",
-      "uid" : "914e24ec19aa55e5",
+      "uid" : "7694ca48eb104bd",
       "parentUid" : "6a5a2bc4c39354cd0a99938f20154cc8",
       "status" : "passed",
       "time" : {
-        "start" : 1626333190436,
-        "stop" : 1626333190523,
-        "duration" : 87
+        "start" : 1626334760978,
+        "stop" : 1626334761084,
+        "duration" : 106
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Debit buying by DECLINED-card",
-      "uid" : "9e2d6f64aa8ea590",
+      "uid" : "7be6325f39ae258",
       "parentUid" : "6a5a2bc4c39354cd0a99938f20154cc8",
       "status" : "passed",
       "time" : {
-        "start" : 1626333190526,
-        "stop" : 1626333190658,
-        "duration" : 132
+        "start" : 1626334761084,
+        "stop" : 1626334761192,
+        "duration" : 108
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Debit buying by APPROVED-card",
-      "uid" : "89242a03dba8ca80",
+      "uid" : "16c9ab9880d662e5",
       "parentUid" : "6a5a2bc4c39354cd0a99938f20154cc8",
       "status" : "passed",
       "time" : {
-        "start" : 1626333190660,
-        "stop" : 1626333190727,
-        "duration" : 67
+        "start" : 1626334761194,
+        "stop" : 1626334761259,
+        "duration" : 65
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Credit buying by DECLINED-card",
-      "uid" : "e3726ff42cf567a7",
+      "uid" : "8ea22e6a67f919c6",
       "parentUid" : "6a5a2bc4c39354cd0a99938f20154cc8",
       "status" : "passed",
       "time" : {
-        "start" : 1626333190729,
-        "stop" : 1626333190802,
-        "duration" : 73
+        "start" : 1626334761262,
+        "stop" : 1626334761415,
+        "duration" : 153
       },
       "flaky" : false,
       "newFailed" : false,
@@ -86,51 +87,51 @@
     "name" : "Database testing",
     "children" : [ {
       "name" : "Checking table fields when credit buying by DECLINED-card",
-      "uid" : "c136ff090e33f972",
+      "uid" : "2988eea4b4a44fd4",
       "parentUid" : "9f019df6a47953cd669250f1dea13a08",
       "status" : "failed",
       "time" : {
-        "start" : 1626333190806,
-        "stop" : 1626333191228,
-        "duration" : 422
+        "start" : 1626334761415,
+        "stop" : 1626334761828,
+        "duration" : 413
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Checking table fields when credit buying by APPROVED-card",
-      "uid" : "88e73eb266a8d59c",
+      "uid" : "3a51dfe295ca85a2",
       "parentUid" : "9f019df6a47953cd669250f1dea13a08",
       "status" : "failed",
       "time" : {
-        "start" : 1626333191232,
-        "stop" : 1626333191361,
-        "duration" : 129
+        "start" : 1626334761833,
+        "stop" : 1626334761977,
+        "duration" : 144
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Checking table fields when debit buying by DECLINED-card",
-      "uid" : "7c674274e6eb13e7",
+      "uid" : "730228cfcedd1b7",
       "parentUid" : "9f019df6a47953cd669250f1dea13a08",
       "status" : "passed",
       "time" : {
-        "start" : 1626333191363,
-        "stop" : 1626333191459,
-        "duration" : 96
+        "start" : 1626334761982,
+        "stop" : 1626334762071,
+        "duration" : 89
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Checking table fields when debit buying by APPROVED-card",
-      "uid" : "39076e839b573d0f",
+      "uid" : "b9069d68435f14bf",
       "parentUid" : "9f019df6a47953cd669250f1dea13a08",
       "status" : "passed",
       "time" : {
-        "start" : 1626333191461,
-        "stop" : 1626333191575,
+        "start" : 1626334762074,
+        "stop" : 1626334762188,
         "duration" : 114
       },
       "flaky" : false,
@@ -142,52 +143,52 @@
     "name" : "GUI testing",
     "children" : [ {
       "name" : "Sending Data Visualization",
-      "uid" : "746ff51fe9525e8a",
+      "uid" : "aa8e07e306ee587f",
       "parentUid" : "e2c92988f35c183522e4db6c401059b2",
       "status" : "passed",
       "time" : {
-        "start" : 1626333191681,
-        "stop" : 1626333194437,
-        "duration" : 2756
+        "start" : 1626334762278,
+        "stop" : 1626334765151,
+        "duration" : 2873
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Page Head title checking",
-      "uid" : "6de315002086728e",
+      "uid" : "27131d01651ecaae",
       "parentUid" : "e2c92988f35c183522e4db6c401059b2",
       "status" : "failed",
       "time" : {
-        "start" : 1626333194462,
-        "stop" : 1626333198845,
-        "duration" : 4383
+        "start" : 1626334765176,
+        "stop" : 1626334769660,
+        "duration" : 4484
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Page Credit title checking",
-      "uid" : "5f148bcd0281b844",
+      "uid" : "1f5ba40d666e2bb8",
       "parentUid" : "e2c92988f35c183522e4db6c401059b2",
       "status" : "passed",
       "time" : {
-        "start" : 1626333198845,
-        "stop" : 1626333198969,
-        "duration" : 124
+        "start" : 1626334769664,
+        "stop" : 1626334769792,
+        "duration" : 128
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Page Debit title checking",
-      "uid" : "e6a0e96ef5be5876",
+      "uid" : "52e86ce556d9fc9b",
       "parentUid" : "e2c92988f35c183522e4db6c401059b2",
       "status" : "passed",
       "time" : {
-        "start" : 1626333198971,
-        "stop" : 1626333199197,
-        "duration" : 226
+        "start" : 1626334769794,
+        "stop" : 1626334769960,
+        "duration" : 166
       },
       "flaky" : false,
       "newFailed" : false,
@@ -198,39 +199,39 @@
     "name" : "'Card Number' field testing",
     "children" : [ {
       "name" : "Notification if 'One digit in field'",
-      "uid" : "cd95b0e6abe2a7c2",
+      "uid" : "a71ffcca1573a195",
       "parentUid" : "f00cc4cdfc3f62a017424872c0421b15",
       "status" : "passed",
       "time" : {
-        "start" : 1626333199216,
-        "stop" : 1626333200259,
-        "duration" : 1043
+        "start" : 1626334769980,
+        "stop" : 1626334771068,
+        "duration" : 1088
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Notification if 'Incomplete card number'",
-      "uid" : "6be70ea4c2e3442c",
+      "uid" : "6512c79091d43a2e",
       "parentUid" : "f00cc4cdfc3f62a017424872c0421b15",
       "status" : "passed",
       "time" : {
-        "start" : 1626333200262,
-        "stop" : 1626333201340,
-        "duration" : 1078
+        "start" : 1626334771074,
+        "stop" : 1626334772360,
+        "duration" : 1286
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Empty field notification",
-      "uid" : "128c9423f059950e",
+      "uid" : "88f9607ede4b8941",
       "parentUid" : "f00cc4cdfc3f62a017424872c0421b15",
       "status" : "passed",
       "time" : {
-        "start" : 1626333201353,
-        "stop" : 1626333202566,
-        "duration" : 1213
+        "start" : 1626334772401,
+        "stop" : 1626334773545,
+        "duration" : 1144
       },
       "flaky" : false,
       "newFailed" : false,
@@ -241,39 +242,39 @@
     "name" : "'CVC' field testing",
     "children" : [ {
       "name" : "Empty field notification",
-      "uid" : "490f350959074453",
+      "uid" : "150185f0d4104d30",
       "parentUid" : "c356148dfceee0490368cefa4e3530a2",
       "status" : "passed",
       "time" : {
-        "start" : 1626333202578,
-        "stop" : 1626333203815,
-        "duration" : 1237
+        "start" : 1626334773548,
+        "stop" : 1626334774597,
+        "duration" : 1049
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Notification if 'Incomplete code'",
-      "uid" : "7a48ff32d949f71d",
+      "uid" : "f815c1224b20aa37",
       "parentUid" : "c356148dfceee0490368cefa4e3530a2",
       "status" : "passed",
       "time" : {
-        "start" : 1626333203818,
-        "stop" : 1626333205013,
-        "duration" : 1195
+        "start" : 1626334774600,
+        "stop" : 1626334775730,
+        "duration" : 1130
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Notification if 'Triple Zero'",
-      "uid" : "bd7beb5726884595",
+      "uid" : "4143998c07d5c2bd",
       "parentUid" : "c356148dfceee0490368cefa4e3530a2",
       "status" : "failed",
       "time" : {
-        "start" : 1626333205017,
-        "stop" : 1626333210486,
-        "duration" : 5469
+        "start" : 1626334775734,
+        "stop" : 1626334781554,
+        "duration" : 5820
       },
       "flaky" : false,
       "newFailed" : false,
@@ -284,91 +285,91 @@
     "name" : "Functional testing",
     "children" : [ {
       "name" : "Credit buying by Random-card",
-      "uid" : "dbc07ebdb74a6e82",
+      "uid" : "cb2668e30cb3011e",
       "parentUid" : "7ddca2c9be1331b70419b8ffc42e2012",
       "status" : "passed",
       "time" : {
-        "start" : 1626333210490,
-        "stop" : 1626333217359,
-        "duration" : 6869
+        "start" : 1626334781558,
+        "stop" : 1626334791577,
+        "duration" : 10019
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Credit buying by APPROVED-card",
-      "uid" : "7c17d3b101ddaf7f",
+      "uid" : "f8dbcb1ad24cb0b9",
       "parentUid" : "7ddca2c9be1331b70419b8ffc42e2012",
       "status" : "passed",
       "time" : {
-        "start" : 1626333217370,
-        "stop" : 1626333228746,
-        "duration" : 11376
+        "start" : 1626334791586,
+        "stop" : 1626334799048,
+        "duration" : 7462
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Debit buying by Random-card",
-      "uid" : "4b7ff362e630740f",
+      "uid" : "24a9527a10efd13f",
       "parentUid" : "7ddca2c9be1331b70419b8ffc42e2012",
       "status" : "passed",
       "time" : {
-        "start" : 1626333228747,
-        "stop" : 1626333237817,
-        "duration" : 9070
+        "start" : 1626334799064,
+        "stop" : 1626334802058,
+        "duration" : 2994
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Debit buying by DECLINED-card",
-      "uid" : "53d0048e14180b38",
+      "uid" : "8f787aa6c81ce738",
       "parentUid" : "7ddca2c9be1331b70419b8ffc42e2012",
       "status" : "failed",
       "time" : {
-        "start" : 1626333237826,
-        "stop" : 1626333254389,
-        "duration" : 16563
+        "start" : 1626334802063,
+        "stop" : 1626334818595,
+        "duration" : 16532
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Empty form sending",
-      "uid" : "1ff9a1b6acc0973c",
+      "uid" : "a901149c1f921192",
       "parentUid" : "7ddca2c9be1331b70419b8ffc42e2012",
       "status" : "passed",
       "time" : {
-        "start" : 1626333254389,
-        "stop" : 1626333254648,
-        "duration" : 259
+        "start" : 1626334818595,
+        "stop" : 1626334818808,
+        "duration" : 213
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Debit buying by APPROVED-card",
-      "uid" : "dd2b047732ce0afe",
+      "uid" : "b737fe1f5e36832d",
       "parentUid" : "7ddca2c9be1331b70419b8ffc42e2012",
       "status" : "passed",
       "time" : {
-        "start" : 1626333254650,
-        "stop" : 1626333264835,
-        "duration" : 10185
+        "start" : 1626334818810,
+        "stop" : 1626334828230,
+        "duration" : 9420
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Credit buying by DECLINED-card",
-      "uid" : "dd79348b327edc46",
+      "uid" : "7f25ed819d61ffe7",
       "parentUid" : "7ddca2c9be1331b70419b8ffc42e2012",
       "status" : "failed",
       "time" : {
-        "start" : 1626333264844,
-        "stop" : 1626333281327,
-        "duration" : 16483
+        "start" : 1626334828245,
+        "stop" : 1626334844796,
+        "duration" : 16551
       },
       "flaky" : false,
       "newFailed" : false,
@@ -379,26 +380,26 @@
     "name" : "'Holder' field testing",
     "children" : [ {
       "name" : "Name format validation",
-      "uid" : "d6263e666fe82251",
+      "uid" : "1526b267c291aa31",
       "parentUid" : "46f5e1425e516fb5e782c5594787698e",
       "status" : "failed",
       "time" : {
-        "start" : 1626333281327,
-        "stop" : 1626333286658,
-        "duration" : 5331
+        "start" : 1626334844796,
+        "stop" : 1626334850250,
+        "duration" : 5454
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Empty field notification",
-      "uid" : "82052cd4fce0f138",
+      "uid" : "298d40eb4c490d02",
       "parentUid" : "46f5e1425e516fb5e782c5594787698e",
       "status" : "passed",
       "time" : {
-        "start" : 1626333286666,
-        "stop" : 1626333287701,
-        "duration" : 1035
+        "start" : 1626334850252,
+        "stop" : 1626334851007,
+        "duration" : 755
       },
       "flaky" : false,
       "newFailed" : false,
@@ -409,91 +410,91 @@
     "name" : "'Month' field testing",
     "children" : [ {
       "name" : "Notification if 'Incorrect month number: 13-99'",
-      "uid" : "739874701a119a70",
+      "uid" : "e0d93cd18e30afcf",
       "parentUid" : "a55360aed6897c5da230b8548597f3f0",
       "status" : "passed",
       "time" : {
-        "start" : 1626333287704,
-        "stop" : 1626333289072,
-        "duration" : 1368
+        "start" : 1626334851010,
+        "stop" : 1626334852311,
+        "duration" : 1301
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Empty field notification",
-      "uid" : "f42539a73142dda7",
+      "uid" : "e38c99253030e1a5",
       "parentUid" : "a55360aed6897c5da230b8548597f3f0",
       "status" : "passed",
       "time" : {
-        "start" : 1626333289075,
-        "stop" : 1626333290237,
-        "duration" : 1162
+        "start" : 1626334852315,
+        "stop" : 1626334853373,
+        "duration" : 1058
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Current date in month and year fields",
-      "uid" : "b68687aa43f6487",
+      "uid" : "12ea4648efb157e4",
       "parentUid" : "a55360aed6897c5da230b8548597f3f0",
       "status" : "passed",
       "time" : {
-        "start" : 1626333290240,
-        "stop" : 1626333292973,
-        "duration" : 2733
+        "start" : 1626334853374,
+        "stop" : 1626334863228,
+        "duration" : 9854
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Notification if 'Double Zero'",
-      "uid" : "f67c26ab0e9b1d70",
+      "uid" : "edd4e6878a44c525",
       "parentUid" : "a55360aed6897c5da230b8548597f3f0",
       "status" : "passed",
       "time" : {
-        "start" : 1626333292973,
-        "stop" : 1626333294162,
-        "duration" : 1189
+        "start" : 1626334863244,
+        "stop" : 1626334864438,
+        "duration" : 1194
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Future month and current year",
-      "uid" : "e9bb69c9dff7dffc",
+      "uid" : "ebcc828346081ab2",
       "parentUid" : "a55360aed6897c5da230b8548597f3f0",
       "status" : "passed",
       "time" : {
-        "start" : 1626333294166,
-        "stop" : 1626333297673,
-        "duration" : 3507
+        "start" : 1626334864439,
+        "stop" : 1626334871510,
+        "duration" : 7071
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Notification if 'Zero'",
-      "uid" : "fb7dc1cd9b88ef6",
+      "uid" : "955286d1a862f68e",
       "parentUid" : "a55360aed6897c5da230b8548597f3f0",
       "status" : "passed",
       "time" : {
-        "start" : 1626333297680,
-        "stop" : 1626333298780,
-        "duration" : 1100
+        "start" : 1626334871512,
+        "stop" : 1626334872793,
+        "duration" : 1281
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Past month and current year",
-      "uid" : "919b1c5fb552650",
+      "uid" : "23547e729a353353",
       "parentUid" : "a55360aed6897c5da230b8548597f3f0",
       "status" : "passed",
       "time" : {
-        "start" : 1626333298784,
-        "stop" : 1626333300042,
-        "duration" : 1258
+        "start" : 1626334872795,
+        "stop" : 1626334873883,
+        "duration" : 1088
       },
       "flaky" : false,
       "newFailed" : false,
@@ -504,71 +505,70 @@
     "name" : "'Year' field testing",
     "children" : [ {
       "name" : "Notification if 'Zero'",
-      "uid" : "f6e7145edb4857b2",
+      "uid" : "6cb21516323f1a51",
       "parentUid" : "672e777edb3b2390b1bf109f8104535f",
       "status" : "passed",
       "time" : {
-        "start" : 1626333300052,
-        "stop" : 1626333301188,
-        "duration" : 1136
+        "start" : 1626334873887,
+        "stop" : 1626334875174,
+        "duration" : 1287
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Past year and current month",
-      "uid" : "67a749b50fb18f73",
+      "uid" : "da96c0c0e96d7c6b",
       "parentUid" : "672e777edb3b2390b1bf109f8104535f",
       "status" : "passed",
       "time" : {
-        "start" : 1626333301194,
-        "stop" : 1626333302504,
-        "duration" : 1310
+        "start" : 1626334875177,
+        "stop" : 1626334876119,
+        "duration" : 942
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Notification if 'Year equals more than five years from now'",
-      "uid" : "ea988852343f0fc4",
+      "uid" : "2fccb771aaf1b046",
       "parentUid" : "672e777edb3b2390b1bf109f8104535f",
       "status" : "passed",
       "time" : {
-        "start" : 1626333302507,
-        "stop" : 1626333303858,
-        "duration" : 1351
+        "start" : 1626334876122,
+        "stop" : 1626334877580,
+        "duration" : 1458
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Notification if 'Double Zero'",
-      "uid" : "58e00334957d3064",
+      "uid" : "24a953acfdf7d0ef",
       "parentUid" : "672e777edb3b2390b1bf109f8104535f",
       "status" : "passed",
       "time" : {
-        "start" : 1626333303860,
-        "stop" : 1626333305128,
-        "duration" : 1268
+        "start" : 1626334877583,
+        "stop" : 1626334878677,
+        "duration" : 1094
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Empty field notification",
-      "uid" : "71402cb5aee05643",
+      "uid" : "a0698229d3559e02",
       "parentUid" : "672e777edb3b2390b1bf109f8104535f",
       "status" : "passed",
       "time" : {
-        "start" : 1626333305132,
-        "stop" : 1626333306395,
-        "duration" : 1263
+        "start" : 1626334878679,
+        "stop" : 1626334879885,
+        "duration" : 1206
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
     "uid" : "672e777edb3b2390b1bf109f8104535f"
-  } ],
-  "name" : "suites"
+  } ]
 }
