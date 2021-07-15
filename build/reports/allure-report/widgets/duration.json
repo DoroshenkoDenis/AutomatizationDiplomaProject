@@ -1,410 +1,410 @@
 [ {
-  "uid" : "6512c79091d43a2e",
-  "name" : "Notification if 'Incomplete card number'",
-  "time" : {
-    "start" : 1626334771074,
-    "stop" : 1626334772360,
-    "duration" : 1286
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "52e86ce556d9fc9b",
-  "name" : "Page Debit title checking",
-  "time" : {
-    "start" : 1626334769794,
-    "stop" : 1626334769960,
-    "duration" : 166
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e0d93cd18e30afcf",
-  "name" : "Notification if 'Incorrect month number: 13-99'",
-  "time" : {
-    "start" : 1626334851010,
-    "stop" : 1626334852311,
-    "duration" : 1301
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "23547e729a353353",
-  "name" : "Past month and current year",
-  "time" : {
-    "start" : 1626334872795,
-    "stop" : 1626334873883,
-    "duration" : 1088
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ebcc828346081ab2",
-  "name" : "Future month and current year",
-  "time" : {
-    "start" : 1626334864439,
-    "stop" : 1626334871510,
-    "duration" : 7071
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "955286d1a862f68e",
-  "name" : "Notification if 'Zero'",
-  "time" : {
-    "start" : 1626334871512,
-    "stop" : 1626334872793,
-    "duration" : 1281
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2fccb771aaf1b046",
-  "name" : "Notification if 'Year equals more than five years from now'",
-  "time" : {
-    "start" : 1626334876122,
-    "stop" : 1626334877580,
-    "duration" : 1458
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "24a9527a10efd13f",
-  "name" : "Debit buying by Random-card",
-  "time" : {
-    "start" : 1626334799064,
-    "stop" : 1626334802058,
-    "duration" : 2994
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "da96c0c0e96d7c6b",
-  "name" : "Past year and current month",
-  "time" : {
-    "start" : 1626334875177,
-    "stop" : 1626334876119,
-    "duration" : 942
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6cb21516323f1a51",
-  "name" : "Notification if 'Zero'",
-  "time" : {
-    "start" : 1626334873887,
-    "stop" : 1626334875174,
-    "duration" : 1287
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "150185f0d4104d30",
-  "name" : "Empty field notification",
-  "time" : {
-    "start" : 1626334773548,
-    "stop" : 1626334774597,
-    "duration" : 1049
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a0698229d3559e02",
-  "name" : "Empty field notification",
-  "time" : {
-    "start" : 1626334878679,
-    "stop" : 1626334879885,
-    "duration" : 1206
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8f787aa6c81ce738",
+  "uid" : "9a59dbd9f2f478b7",
   "name" : "Debit buying by DECLINED-card",
   "time" : {
-    "start" : 1626334802063,
-    "stop" : 1626334818595,
-    "duration" : 16532
+    "start" : 1626335522441,
+    "stop" : 1626335539015,
+    "duration" : 16574
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "b9069d68435f14bf",
-  "name" : "Checking table fields when debit buying by APPROVED-card",
+  "uid" : "bf2f33a741ea3251",
+  "name" : "Credit buying by Random-card",
   "time" : {
-    "start" : 1626334762074,
-    "stop" : 1626334762188,
-    "duration" : 114
+    "start" : 1626335480330,
+    "stop" : 1626335482267,
+    "duration" : 1937
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "edd4e6878a44c525",
-  "name" : "Notification if 'Double Zero'",
+  "uid" : "4298457df6623b7b",
+  "name" : "Credit buying by APPROVED-card",
   "time" : {
-    "start" : 1626334863244,
-    "stop" : 1626334864438,
-    "duration" : 1194
+    "start" : 1626335482345,
+    "stop" : 1626335482517,
+    "duration" : 172
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4143998c07d5c2bd",
+  "uid" : "f1e42faa1b246a7f",
   "name" : "Notification if 'Triple Zero'",
   "time" : {
-    "start" : 1626334775734,
-    "stop" : 1626334781554,
-    "duration" : 5820
+    "start" : 1626335496381,
+    "stop" : 1626335501938,
+    "duration" : 5557
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "cb2668e30cb3011e",
-  "name" : "Credit buying by Random-card",
-  "time" : {
-    "start" : 1626334781558,
-    "stop" : 1626334791577,
-    "duration" : 10019
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2988eea4b4a44fd4",
-  "name" : "Checking table fields when credit buying by DECLINED-card",
-  "time" : {
-    "start" : 1626334761415,
-    "stop" : 1626334761828,
-    "duration" : 413
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "3a51dfe295ca85a2",
-  "name" : "Checking table fields when credit buying by APPROVED-card",
-  "time" : {
-    "start" : 1626334761833,
-    "stop" : 1626334761977,
-    "duration" : 144
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "e38c99253030e1a5",
-  "name" : "Empty field notification",
-  "time" : {
-    "start" : 1626334852315,
-    "stop" : 1626334853373,
-    "duration" : 1058
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "16c9ab9880d662e5",
-  "name" : "Debit buying by APPROVED-card",
-  "time" : {
-    "start" : 1626334761194,
-    "stop" : 1626334761259,
-    "duration" : 65
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "882f8dad4566d116",
-  "name" : "Credit buying by Random-card",
-  "time" : {
-    "start" : 1626334759062,
-    "stop" : 1626334760797,
-    "duration" : 1735
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8ea22e6a67f919c6",
-  "name" : "Credit buying by DECLINED-card",
-  "time" : {
-    "start" : 1626334761262,
-    "stop" : 1626334761415,
-    "duration" : 153
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "12ea4648efb157e4",
-  "name" : "Current date in month and year fields",
-  "time" : {
-    "start" : 1626334853374,
-    "stop" : 1626334863228,
-    "duration" : 9854
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7e736a513b86d45a",
-  "name" : "Credit buying by APPROVED-card",
-  "time" : {
-    "start" : 1626334760860,
-    "stop" : 1626334760972,
-    "duration" : 112
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a901149c1f921192",
-  "name" : "Empty form sending",
-  "time" : {
-    "start" : 1626334818595,
-    "stop" : 1626334818808,
-    "duration" : 213
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f8dbcb1ad24cb0b9",
-  "name" : "Credit buying by APPROVED-card",
-  "time" : {
-    "start" : 1626334791586,
-    "stop" : 1626334799048,
-    "duration" : 7462
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "24a953acfdf7d0ef",
+  "uid" : "42fefa9bf5acef37",
   "name" : "Notification if 'Double Zero'",
   "time" : {
-    "start" : 1626334877583,
-    "stop" : 1626334878677,
-    "duration" : 1094
+    "start" : 1626335580002,
+    "stop" : 1626335581131,
+    "duration" : 1129
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b737fe1f5e36832d",
-  "name" : "Debit buying by APPROVED-card",
-  "time" : {
-    "start" : 1626334818810,
-    "stop" : 1626334828230,
-    "duration" : 9420
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7f25ed819d61ffe7",
-  "name" : "Credit buying by DECLINED-card",
-  "time" : {
-    "start" : 1626334828245,
-    "stop" : 1626334844796,
-    "duration" : 16551
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "1526b267c291aa31",
-  "name" : "Name format validation",
-  "time" : {
-    "start" : 1626334844796,
-    "stop" : 1626334850250,
-    "duration" : 5454
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "f815c1224b20aa37",
-  "name" : "Notification if 'Incomplete code'",
-  "time" : {
-    "start" : 1626334774600,
-    "stop" : 1626334775730,
-    "duration" : 1130
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7be6325f39ae258",
-  "name" : "Debit buying by DECLINED-card",
-  "time" : {
-    "start" : 1626334761084,
-    "stop" : 1626334761192,
-    "duration" : 108
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1f5ba40d666e2bb8",
-  "name" : "Page Credit title checking",
-  "time" : {
-    "start" : 1626334769664,
-    "stop" : 1626334769792,
-    "duration" : 128
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "aa8e07e306ee587f",
-  "name" : "Sending Data Visualization",
-  "time" : {
-    "start" : 1626334762278,
-    "stop" : 1626334765151,
-    "duration" : 2873
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "298d40eb4c490d02",
-  "name" : "Empty field notification",
-  "time" : {
-    "start" : 1626334850252,
-    "stop" : 1626334851007,
-    "duration" : 755
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "27131d01651ecaae",
-  "name" : "Page Head title checking",
-  "time" : {
-    "start" : 1626334765176,
-    "stop" : 1626334769660,
-    "duration" : 4484
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "7694ca48eb104bd",
-  "name" : "Debit buying by Random-card",
-  "time" : {
-    "start" : 1626334760978,
-    "stop" : 1626334761084,
-    "duration" : 106
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a71ffcca1573a195",
+  "uid" : "ab924bd3ecd567ee",
   "name" : "Notification if 'One digit in field'",
   "time" : {
-    "start" : 1626334769980,
-    "stop" : 1626334771068,
-    "duration" : 1088
+    "start" : 1626335491216,
+    "stop" : 1626335492144,
+    "duration" : 928
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "88f9607ede4b8941",
-  "name" : "Empty field notification",
+  "uid" : "750f96545252c843",
+  "name" : "Debit buying by Random-card",
   "time" : {
-    "start" : 1626334772401,
-    "stop" : 1626334773545,
-    "duration" : 1144
+    "start" : 1626335516887,
+    "stop" : 1626335522432,
+    "duration" : 5545
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "730228cfcedd1b7",
+  "uid" : "a615dde6bdef2817",
+  "name" : "Page Credit title checking",
+  "time" : {
+    "start" : 1626335490936,
+    "stop" : 1626335491078,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "464da6ca9bc2659a",
+  "name" : "Future month and current year",
+  "time" : {
+    "start" : 1626335581134,
+    "stop" : 1626335588952,
+    "duration" : 7818
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "517ac665e7a9d22d",
+  "name" : "Debit buying by Random-card",
+  "time" : {
+    "start" : 1626335482520,
+    "stop" : 1626335482623,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "202786228d800dee",
+  "name" : "Debit buying by DECLINED-card",
+  "time" : {
+    "start" : 1626335482626,
+    "stop" : 1626335482745,
+    "duration" : 119
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "841b7e6b2eb2b964",
+  "name" : "Credit buying by DECLINED-card",
+  "time" : {
+    "start" : 1626335550192,
+    "stop" : 1626335566652,
+    "duration" : 16460
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "38237b93a368321a",
+  "name" : "Notification if 'Year equals more than five years from now'",
+  "time" : {
+    "start" : 1626335594114,
+    "stop" : 1626335595407,
+    "duration" : 1293
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "56d21e58dfd2da7a",
   "name" : "Checking table fields when debit buying by DECLINED-card",
   "time" : {
-    "start" : 1626334761982,
-    "stop" : 1626334762071,
-    "duration" : 89
+    "start" : 1626335483486,
+    "stop" : 1626335483601,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a3bc3edce42f23c",
+  "name" : "Empty field notification",
+  "time" : {
+    "start" : 1626335596549,
+    "stop" : 1626335597625,
+    "duration" : 1076
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d66fa994bff1fb31",
+  "name" : "Empty form sending",
+  "time" : {
+    "start" : 1626335539031,
+    "stop" : 1626335539225,
+    "duration" : 194
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d6b73388b560c13",
+  "name" : "Empty field notification",
+  "time" : {
+    "start" : 1626335573823,
+    "stop" : 1626335575074,
+    "duration" : 1251
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "687d4b5258701b1",
+  "name" : "Debit buying by APPROVED-card",
+  "time" : {
+    "start" : 1626335539227,
+    "stop" : 1626335550182,
+    "duration" : 10955
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a99eb24962e774eb",
+  "name" : "Notification if 'Zero'",
+  "time" : {
+    "start" : 1626335588962,
+    "stop" : 1626335590259,
+    "duration" : 1297
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a11e94e2944b9696",
+  "name" : "Checking table fields when credit buying by DECLINED-card",
+  "time" : {
+    "start" : 1626335482916,
+    "stop" : 1626335483332,
+    "duration" : 416
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c15457cd0fb3b02b",
+  "name" : "Sending Data Visualization",
+  "time" : {
+    "start" : 1626335483802,
+    "stop" : 1626335486582,
+    "duration" : 2780
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5fcaddcdc9a522a5",
+  "name" : "Past year and current month",
+  "time" : {
+    "start" : 1626335592974,
+    "stop" : 1626335594108,
+    "duration" : 1134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "631251613564a6b5",
+  "name" : "Credit buying by APPROVED-card",
+  "time" : {
+    "start" : 1626335510464,
+    "stop" : 1626335516887,
+    "duration" : 6423
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7435e4b69a6967a",
+  "name" : "Notification if 'Double Zero'",
+  "time" : {
+    "start" : 1626335595411,
+    "stop" : 1626335596547,
+    "duration" : 1136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44c86bf7ab0f24b8",
+  "name" : "Empty field notification",
+  "time" : {
+    "start" : 1626335493247,
+    "stop" : 1626335494133,
+    "duration" : 886
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb31cad97b87e237",
+  "name" : "Past month and current year",
+  "time" : {
+    "start" : 1626335590262,
+    "stop" : 1626335591558,
+    "duration" : 1296
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ad7d5938a7cb45a",
+  "name" : "Notification if 'Incorrect month number: 13-99'",
+  "time" : {
+    "start" : 1626335572679,
+    "stop" : 1626335573821,
+    "duration" : 1142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49ffcd0d7529f223",
+  "name" : "Checking table fields when credit buying by APPROVED-card",
+  "time" : {
+    "start" : 1626335483335,
+    "stop" : 1626335483481,
+    "duration" : 146
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "87b4d683380e1f38",
+  "name" : "Notification if 'Incomplete code'",
+  "time" : {
+    "start" : 1626335495152,
+    "stop" : 1626335496379,
+    "duration" : 1227
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "751bcef826e19e85",
+  "name" : "Page Debit title checking",
+  "time" : {
+    "start" : 1626335491080,
+    "stop" : 1626335491197,
+    "duration" : 117
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9c3c3aa76b65919",
+  "name" : "Current date in month and year fields",
+  "time" : {
+    "start" : 1626335575079,
+    "stop" : 1626335579992,
+    "duration" : 4913
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d498d1871f702ecb",
+  "name" : "Notification if 'Incomplete card number'",
+  "time" : {
+    "start" : 1626335492147,
+    "stop" : 1626335493233,
+    "duration" : 1086
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57ea5d229a4b2389",
+  "name" : "Debit buying by APPROVED-card",
+  "time" : {
+    "start" : 1626335482746,
+    "stop" : 1626335482822,
+    "duration" : 76
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "478468ce98edb7f0",
+  "name" : "Empty field notification",
+  "time" : {
+    "start" : 1626335571791,
+    "stop" : 1626335572677,
+    "duration" : 886
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5dcbbdbe60aa2cc",
+  "name" : "Empty field notification",
+  "time" : {
+    "start" : 1626335494143,
+    "stop" : 1626335495144,
+    "duration" : 1001
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aba84d95ab7c3d7d",
+  "name" : "Credit buying by DECLINED-card",
+  "time" : {
+    "start" : 1626335482826,
+    "stop" : 1626335482911,
+    "duration" : 85
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6999d3be1afd906",
+  "name" : "Page Head title checking",
+  "time" : {
+    "start" : 1626335486613,
+    "stop" : 1626335490936,
+    "duration" : 4323
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d93a2697e726bba2",
+  "name" : "Checking table fields when debit buying by APPROVED-card",
+  "time" : {
+    "start" : 1626335483603,
+    "stop" : 1626335483712,
+    "duration" : 109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b5b3ea06f85bd910",
+  "name" : "Name format validation",
+  "time" : {
+    "start" : 1626335566656,
+    "stop" : 1626335571787,
+    "duration" : 5131
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "fbd7e779006fa5db",
+  "name" : "Credit buying by Random-card",
+  "time" : {
+    "start" : 1626335501941,
+    "stop" : 1626335510459,
+    "duration" : 8518
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f6a7fb41d656588",
+  "name" : "Notification if 'Zero'",
+  "time" : {
+    "start" : 1626335591569,
+    "stop" : 1626335592971,
+    "duration" : 1402
   },
   "status" : "passed",
   "severity" : "normal"

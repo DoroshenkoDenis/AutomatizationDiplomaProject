@@ -7,78 +7,78 @@
       "name" : "apiTest.APITest",
       "children" : [ {
         "name" : "creditBuyingByAnotherCard",
-        "uid" : "882f8dad4566d116",
+        "uid" : "bf2f33a741ea3251",
         "parentUid" : "53d505f497543b5855894d6a787c3572",
         "status" : "passed",
         "time" : {
-          "start" : 1626334759062,
-          "stop" : 1626334760797,
-          "duration" : 1735
+          "start" : 1626335480330,
+          "stop" : 1626335482267,
+          "duration" : 1937
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "creditBuyingByApprovedCard",
-        "uid" : "7e736a513b86d45a",
+        "uid" : "4298457df6623b7b",
         "parentUid" : "53d505f497543b5855894d6a787c3572",
         "status" : "passed",
         "time" : {
-          "start" : 1626334760860,
-          "stop" : 1626334760972,
-          "duration" : 112
+          "start" : 1626335482345,
+          "stop" : 1626335482517,
+          "duration" : 172
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "debitBuyingByAnotherCard",
-        "uid" : "7694ca48eb104bd",
+        "uid" : "517ac665e7a9d22d",
         "parentUid" : "53d505f497543b5855894d6a787c3572",
         "status" : "passed",
         "time" : {
-          "start" : 1626334760978,
-          "stop" : 1626334761084,
-          "duration" : 106
+          "start" : 1626335482520,
+          "stop" : 1626335482623,
+          "duration" : 103
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "debitBuyingByDeclinedCard",
-        "uid" : "7be6325f39ae258",
+        "uid" : "202786228d800dee",
         "parentUid" : "53d505f497543b5855894d6a787c3572",
         "status" : "passed",
         "time" : {
-          "start" : 1626334761084,
-          "stop" : 1626334761192,
-          "duration" : 108
+          "start" : 1626335482626,
+          "stop" : 1626335482745,
+          "duration" : 119
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "debitBuyingByApprovedCard",
-        "uid" : "16c9ab9880d662e5",
+        "uid" : "57ea5d229a4b2389",
         "parentUid" : "53d505f497543b5855894d6a787c3572",
         "status" : "passed",
         "time" : {
-          "start" : 1626334761194,
-          "stop" : 1626334761259,
-          "duration" : 65
+          "start" : 1626335482746,
+          "stop" : 1626335482822,
+          "duration" : 76
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "creditBuyingByDeclinedCard",
-        "uid" : "8ea22e6a67f919c6",
+        "uid" : "aba84d95ab7c3d7d",
         "parentUid" : "53d505f497543b5855894d6a787c3572",
         "status" : "passed",
         "time" : {
-          "start" : 1626334761262,
-          "stop" : 1626334761415,
-          "duration" : 153
+          "start" : 1626335482826,
+          "stop" : 1626335482911,
+          "duration" : 85
         },
         "flaky" : false,
         "newFailed" : false,
@@ -89,52 +89,52 @@
       "name" : "dbTest.dbTest",
       "children" : [ {
         "name" : "shouldFillInFieldsIfCreditBuyingByDeclinedCard",
-        "uid" : "2988eea4b4a44fd4",
+        "uid" : "a11e94e2944b9696",
         "parentUid" : "479f2dcd8d469cd69e85751c5c162554",
         "status" : "failed",
         "time" : {
-          "start" : 1626334761415,
-          "stop" : 1626334761828,
-          "duration" : 413
+          "start" : 1626335482916,
+          "stop" : 1626335483332,
+          "duration" : 416
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "shouldFillInFieldsIfCreditBuyingByApprovedCard",
-        "uid" : "3a51dfe295ca85a2",
+        "uid" : "49ffcd0d7529f223",
         "parentUid" : "479f2dcd8d469cd69e85751c5c162554",
         "status" : "failed",
         "time" : {
-          "start" : 1626334761833,
-          "stop" : 1626334761977,
-          "duration" : 144
+          "start" : 1626335483335,
+          "stop" : 1626335483481,
+          "duration" : 146
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "shouldFillInFieldsIfDebitBuyingByDeclinedCard",
-        "uid" : "730228cfcedd1b7",
+        "uid" : "56d21e58dfd2da7a",
         "parentUid" : "479f2dcd8d469cd69e85751c5c162554",
         "status" : "passed",
         "time" : {
-          "start" : 1626334761982,
-          "stop" : 1626334762071,
-          "duration" : 89
+          "start" : 1626335483486,
+          "stop" : 1626335483601,
+          "duration" : 115
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "shouldFillInFieldsIfDebitBuyingByApprovedCard",
-        "uid" : "b9069d68435f14bf",
+        "uid" : "d93a2697e726bba2",
         "parentUid" : "479f2dcd8d469cd69e85751c5c162554",
         "status" : "passed",
         "time" : {
-          "start" : 1626334762074,
-          "stop" : 1626334762188,
-          "duration" : 114
+          "start" : 1626335483603,
+          "stop" : 1626335483712,
+          "duration" : 109
         },
         "flaky" : false,
         "newFailed" : false,
@@ -145,52 +145,52 @@
       "name" : "guiTest.GUITest",
       "children" : [ {
         "name" : "sendingVisualizationTest",
-        "uid" : "aa8e07e306ee587f",
+        "uid" : "c15457cd0fb3b02b",
         "parentUid" : "796455e39e2de524904fb4e1e257b547",
         "status" : "passed",
         "time" : {
-          "start" : 1626334762278,
-          "stop" : 1626334765151,
-          "duration" : 2873
+          "start" : 1626335483802,
+          "stop" : 1626335486582,
+          "duration" : 2780
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "headTitleTest",
-        "uid" : "27131d01651ecaae",
+        "uid" : "6999d3be1afd906",
         "parentUid" : "796455e39e2de524904fb4e1e257b547",
         "status" : "failed",
         "time" : {
-          "start" : 1626334765176,
-          "stop" : 1626334769660,
-          "duration" : 4484
+          "start" : 1626335486613,
+          "stop" : 1626335490936,
+          "duration" : 4323
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "creditHeadTitleTest",
-        "uid" : "1f5ba40d666e2bb8",
+        "uid" : "a615dde6bdef2817",
         "parentUid" : "796455e39e2de524904fb4e1e257b547",
         "status" : "passed",
         "time" : {
-          "start" : 1626334769664,
-          "stop" : 1626334769792,
-          "duration" : 128
+          "start" : 1626335490936,
+          "stop" : 1626335491078,
+          "duration" : 142
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "debitHeadingTitleTest",
-        "uid" : "52e86ce556d9fc9b",
+        "uid" : "751bcef826e19e85",
         "parentUid" : "796455e39e2de524904fb4e1e257b547",
         "status" : "passed",
         "time" : {
-          "start" : 1626334769794,
-          "stop" : 1626334769960,
-          "duration" : 166
+          "start" : 1626335491080,
+          "stop" : 1626335491197,
+          "duration" : 117
         },
         "flaky" : false,
         "newFailed" : false,
@@ -203,39 +203,39 @@
         "name" : "CardNumberFieldTest",
         "children" : [ {
           "name" : "oneNumberInCardNumberField",
-          "uid" : "a71ffcca1573a195",
+          "uid" : "ab924bd3ecd567ee",
           "parentUid" : "a3bf4318d9f6c59299fff3655d38627b",
           "status" : "passed",
           "time" : {
-            "start" : 1626334769980,
-            "stop" : 1626334771068,
-            "duration" : 1088
+            "start" : 1626335491216,
+            "stop" : 1626335492144,
+            "duration" : 928
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "shortNumberInCardNumberField",
-          "uid" : "6512c79091d43a2e",
+          "uid" : "d498d1871f702ecb",
           "parentUid" : "a3bf4318d9f6c59299fff3655d38627b",
           "status" : "passed",
           "time" : {
-            "start" : 1626334771074,
-            "stop" : 1626334772360,
-            "duration" : 1286
+            "start" : 1626335492147,
+            "stop" : 1626335493233,
+            "duration" : 1086
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "emptyCardNumberField",
-          "uid" : "88f9607ede4b8941",
+          "uid" : "44c86bf7ab0f24b8",
           "parentUid" : "a3bf4318d9f6c59299fff3655d38627b",
           "status" : "passed",
           "time" : {
-            "start" : 1626334772401,
-            "stop" : 1626334773545,
-            "duration" : 1144
+            "start" : 1626335493247,
+            "stop" : 1626335494133,
+            "duration" : 886
           },
           "flaky" : false,
           "newFailed" : false,
@@ -246,39 +246,39 @@
         "name" : "CVCFieldTest",
         "children" : [ {
           "name" : "emptyCVCNumberField",
-          "uid" : "150185f0d4104d30",
+          "uid" : "f5dcbbdbe60aa2cc",
           "parentUid" : "e46e8687d10b4637b72df8687fc6aca6",
           "status" : "passed",
           "time" : {
-            "start" : 1626334773548,
-            "stop" : 1626334774597,
-            "duration" : 1049
+            "start" : 1626335494143,
+            "stop" : 1626335495144,
+            "duration" : 1001
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "shortNumberInCVCNumberField",
-          "uid" : "f815c1224b20aa37",
+          "uid" : "87b4d683380e1f38",
           "parentUid" : "e46e8687d10b4637b72df8687fc6aca6",
           "status" : "passed",
           "time" : {
-            "start" : 1626334774600,
-            "stop" : 1626334775730,
-            "duration" : 1130
+            "start" : 1626335495152,
+            "stop" : 1626335496379,
+            "duration" : 1227
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "tripleZeroInCVCNumberField",
-          "uid" : "4143998c07d5c2bd",
+          "uid" : "f1e42faa1b246a7f",
           "parentUid" : "e46e8687d10b4637b72df8687fc6aca6",
           "status" : "failed",
           "time" : {
-            "start" : 1626334775734,
-            "stop" : 1626334781554,
-            "duration" : 5820
+            "start" : 1626335496381,
+            "stop" : 1626335501938,
+            "duration" : 5557
           },
           "flaky" : false,
           "newFailed" : false,
@@ -289,91 +289,91 @@
         "name" : "FunctionalTest",
         "children" : [ {
           "name" : "creditBuyingByAnotherCard",
-          "uid" : "cb2668e30cb3011e",
+          "uid" : "fbd7e779006fa5db",
           "parentUid" : "ca579973708bb4ae2c9b3339c56d7b5d",
           "status" : "passed",
           "time" : {
-            "start" : 1626334781558,
-            "stop" : 1626334791577,
-            "duration" : 10019
+            "start" : 1626335501941,
+            "stop" : 1626335510459,
+            "duration" : 8518
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "creditBuyingByApprovedCard",
-          "uid" : "f8dbcb1ad24cb0b9",
+          "uid" : "631251613564a6b5",
           "parentUid" : "ca579973708bb4ae2c9b3339c56d7b5d",
           "status" : "passed",
           "time" : {
-            "start" : 1626334791586,
-            "stop" : 1626334799048,
-            "duration" : 7462
+            "start" : 1626335510464,
+            "stop" : 1626335516887,
+            "duration" : 6423
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "debitBuyingByAnotherCard",
-          "uid" : "24a9527a10efd13f",
+          "uid" : "750f96545252c843",
           "parentUid" : "ca579973708bb4ae2c9b3339c56d7b5d",
           "status" : "passed",
           "time" : {
-            "start" : 1626334799064,
-            "stop" : 1626334802058,
-            "duration" : 2994
+            "start" : 1626335516887,
+            "stop" : 1626335522432,
+            "duration" : 5545
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "debitBuyingByDeclinedCard",
-          "uid" : "8f787aa6c81ce738",
+          "uid" : "9a59dbd9f2f478b7",
           "parentUid" : "ca579973708bb4ae2c9b3339c56d7b5d",
           "status" : "failed",
           "time" : {
-            "start" : 1626334802063,
-            "stop" : 1626334818595,
-            "duration" : 16532
+            "start" : 1626335522441,
+            "stop" : 1626335539015,
+            "duration" : 16574
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "continueWithEmptyFields",
-          "uid" : "a901149c1f921192",
+          "uid" : "d66fa994bff1fb31",
           "parentUid" : "ca579973708bb4ae2c9b3339c56d7b5d",
           "status" : "passed",
           "time" : {
-            "start" : 1626334818595,
-            "stop" : 1626334818808,
-            "duration" : 213
+            "start" : 1626335539031,
+            "stop" : 1626335539225,
+            "duration" : 194
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "debitBuyingByApprovedCard",
-          "uid" : "b737fe1f5e36832d",
+          "uid" : "687d4b5258701b1",
           "parentUid" : "ca579973708bb4ae2c9b3339c56d7b5d",
           "status" : "passed",
           "time" : {
-            "start" : 1626334818810,
-            "stop" : 1626334828230,
-            "duration" : 9420
+            "start" : 1626335539227,
+            "stop" : 1626335550182,
+            "duration" : 10955
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "creditBuyingByDeclinedCard",
-          "uid" : "7f25ed819d61ffe7",
+          "uid" : "841b7e6b2eb2b964",
           "parentUid" : "ca579973708bb4ae2c9b3339c56d7b5d",
           "status" : "failed",
           "time" : {
-            "start" : 1626334828245,
-            "stop" : 1626334844796,
-            "duration" : 16551
+            "start" : 1626335550192,
+            "stop" : 1626335566652,
+            "duration" : 16460
           },
           "flaky" : false,
           "newFailed" : false,
@@ -384,26 +384,26 @@
         "name" : "HolderFieldTest",
         "children" : [ {
           "name" : "badNameInHolderField",
-          "uid" : "1526b267c291aa31",
+          "uid" : "b5b3ea06f85bd910",
           "parentUid" : "617bb6a455a7ccee9476c54c16f09166",
           "status" : "failed",
           "time" : {
-            "start" : 1626334844796,
-            "stop" : 1626334850250,
-            "duration" : 5454
+            "start" : 1626335566656,
+            "stop" : 1626335571787,
+            "duration" : 5131
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "emptyHolderField",
-          "uid" : "298d40eb4c490d02",
+          "uid" : "478468ce98edb7f0",
           "parentUid" : "617bb6a455a7ccee9476c54c16f09166",
           "status" : "passed",
           "time" : {
-            "start" : 1626334850252,
-            "stop" : 1626334851007,
-            "duration" : 755
+            "start" : 1626335571791,
+            "stop" : 1626335572677,
+            "duration" : 886
           },
           "flaky" : false,
           "newFailed" : false,
@@ -414,91 +414,91 @@
         "name" : "MonthFieldTest",
         "children" : [ {
           "name" : "badRandomDigitInMonthField",
-          "uid" : "e0d93cd18e30afcf",
+          "uid" : "4ad7d5938a7cb45a",
           "parentUid" : "0f33d2d7ac7da5bf68fdcd38ab6e2396",
           "status" : "passed",
           "time" : {
-            "start" : 1626334851010,
-            "stop" : 1626334852311,
-            "duration" : 1301
+            "start" : 1626335572679,
+            "stop" : 1626335573821,
+            "duration" : 1142
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "emptyMonthField",
-          "uid" : "e38c99253030e1a5",
+          "uid" : "4d6b73388b560c13",
           "parentUid" : "0f33d2d7ac7da5bf68fdcd38ab6e2396",
           "status" : "passed",
           "time" : {
-            "start" : 1626334852315,
-            "stop" : 1626334853373,
-            "duration" : 1058
+            "start" : 1626335573823,
+            "stop" : 1626335575074,
+            "duration" : 1251
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "currentDateInMonthAndYearFields",
-          "uid" : "12ea4648efb157e4",
+          "uid" : "f9c3c3aa76b65919",
           "parentUid" : "0f33d2d7ac7da5bf68fdcd38ab6e2396",
           "status" : "passed",
           "time" : {
-            "start" : 1626334853374,
-            "stop" : 1626334863228,
-            "duration" : 9854
+            "start" : 1626335575079,
+            "stop" : 1626335579992,
+            "duration" : 4913
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "doubleZeroDigitInMonthField",
-          "uid" : "edd4e6878a44c525",
+          "uid" : "42fefa9bf5acef37",
           "parentUid" : "0f33d2d7ac7da5bf68fdcd38ab6e2396",
           "status" : "passed",
           "time" : {
-            "start" : 1626334863244,
-            "stop" : 1626334864438,
-            "duration" : 1194
+            "start" : 1626335580002,
+            "stop" : 1626335581131,
+            "duration" : 1129
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "futureDateInMonthFieldAndCurrentDateInYearField",
-          "uid" : "ebcc828346081ab2",
+          "uid" : "464da6ca9bc2659a",
           "parentUid" : "0f33d2d7ac7da5bf68fdcd38ab6e2396",
           "status" : "passed",
           "time" : {
-            "start" : 1626334864439,
-            "stop" : 1626334871510,
-            "duration" : 7071
+            "start" : 1626335581134,
+            "stop" : 1626335588952,
+            "duration" : 7818
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "zeroDigitInMonthField",
-          "uid" : "955286d1a862f68e",
+          "uid" : "a99eb24962e774eb",
           "parentUid" : "0f33d2d7ac7da5bf68fdcd38ab6e2396",
           "status" : "passed",
           "time" : {
-            "start" : 1626334871512,
-            "stop" : 1626334872793,
-            "duration" : 1281
+            "start" : 1626335588962,
+            "stop" : 1626335590259,
+            "duration" : 1297
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "pastDateInMonthFieldAndCurrentDateInYearField",
-          "uid" : "23547e729a353353",
+          "uid" : "fb31cad97b87e237",
           "parentUid" : "0f33d2d7ac7da5bf68fdcd38ab6e2396",
           "status" : "passed",
           "time" : {
-            "start" : 1626334872795,
-            "stop" : 1626334873883,
-            "duration" : 1088
+            "start" : 1626335590262,
+            "stop" : 1626335591558,
+            "duration" : 1296
           },
           "flaky" : false,
           "newFailed" : false,
@@ -509,65 +509,65 @@
         "name" : "YearFieldTest",
         "children" : [ {
           "name" : "zeroDigitInYearField",
-          "uid" : "6cb21516323f1a51",
+          "uid" : "1f6a7fb41d656588",
           "parentUid" : "2ae6e600e136c8a22624197c961dd6e0",
           "status" : "passed",
           "time" : {
-            "start" : 1626334873887,
-            "stop" : 1626334875174,
-            "duration" : 1287
+            "start" : 1626335591569,
+            "stop" : 1626335592971,
+            "duration" : 1402
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "pastDateInYearFieldAndCurrentDateInMonthField",
-          "uid" : "da96c0c0e96d7c6b",
+          "uid" : "5fcaddcdc9a522a5",
           "parentUid" : "2ae6e600e136c8a22624197c961dd6e0",
           "status" : "passed",
           "time" : {
-            "start" : 1626334875177,
-            "stop" : 1626334876119,
-            "duration" : 942
+            "start" : 1626335592974,
+            "stop" : 1626335594108,
+            "duration" : 1134
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "badRandomDigitInYearField",
-          "uid" : "2fccb771aaf1b046",
+          "uid" : "38237b93a368321a",
           "parentUid" : "2ae6e600e136c8a22624197c961dd6e0",
           "status" : "passed",
           "time" : {
-            "start" : 1626334876122,
-            "stop" : 1626334877580,
-            "duration" : 1458
+            "start" : 1626335594114,
+            "stop" : 1626335595407,
+            "duration" : 1293
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "doubleZeroDigitInYearField",
-          "uid" : "24a953acfdf7d0ef",
+          "uid" : "7435e4b69a6967a",
           "parentUid" : "2ae6e600e136c8a22624197c961dd6e0",
           "status" : "passed",
           "time" : {
-            "start" : 1626334877583,
-            "stop" : 1626334878677,
-            "duration" : 1094
+            "start" : 1626335595411,
+            "stop" : 1626335596547,
+            "duration" : 1136
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "emptyYearField",
-          "uid" : "a0698229d3559e02",
+          "uid" : "1a3bc3edce42f23c",
           "parentUid" : "2ae6e600e136c8a22624197c961dd6e0",
           "status" : "passed",
           "time" : {
-            "start" : 1626334878679,
-            "stop" : 1626334879885,
-            "duration" : 1206
+            "start" : 1626335596549,
+            "stop" : 1626335597625,
+            "duration" : 1076
           },
           "flaky" : false,
           "newFailed" : false,

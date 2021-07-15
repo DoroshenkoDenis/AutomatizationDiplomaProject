@@ -7,26 +7,26 @@
       "name" : "expected: not <null>",
       "children" : [ {
         "name" : "Checking table fields when credit buying by DECLINED-card",
-        "uid" : "2988eea4b4a44fd4",
+        "uid" : "a11e94e2944b9696",
         "parentUid" : "5f18c668031a56c86d9361a8797e5508",
         "status" : "failed",
         "time" : {
-          "start" : 1626334761415,
-          "stop" : 1626334761828,
-          "duration" : 413
+          "start" : 1626335482916,
+          "stop" : 1626335483332,
+          "duration" : 416
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Checking table fields when credit buying by APPROVED-card",
-        "uid" : "3a51dfe295ca85a2",
+        "uid" : "49ffcd0d7529f223",
         "parentUid" : "5f18c668031a56c86d9361a8797e5508",
         "status" : "failed",
         "time" : {
-          "start" : 1626334761833,
-          "stop" : 1626334761977,
-          "duration" : 144
+          "start" : 1626335483335,
+          "stop" : 1626335483481,
+          "duration" : 146
         },
         "flaky" : false,
         "newFailed" : false,
@@ -34,90 +34,90 @@
       } ],
       "uid" : "5f18c668031a56c86d9361a8797e5508"
     }, {
-      "name" : "Element should have attribute text=\"Путешествие дня\" {title}\r\nElement: '<title displayed:false></title>'\r\nActual value: text=\"AQA: Заявка на карту\"\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334769388.0.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334769388.0.html\r\nTimeout: 4 s.",
+      "name" : "Element should have attribute text=\"Путешествие дня\" {title}\r\nElement: '<title displayed:false></title>'\r\nActual value: text=\"AQA: Заявка на карту\"\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626335490655.0.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626335490655.0.html\r\nTimeout: 4 s.",
       "children" : [ {
         "name" : "Page Head title checking",
-        "uid" : "27131d01651ecaae",
-        "parentUid" : "a351085b6e32a45732f32777be788c0d",
+        "uid" : "6999d3be1afd906",
+        "parentUid" : "09db8d6bbc1e91599b4291168ba5a8e8",
         "status" : "failed",
         "time" : {
-          "start" : 1626334765176,
-          "stop" : 1626334769660,
-          "duration" : 4484
+          "start" : 1626335486613,
+          "stop" : 1626335490936,
+          "duration" : 4323
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "a351085b6e32a45732f32777be788c0d"
+      "uid" : "09db8d6bbc1e91599b4291168ba5a8e8"
     }, {
-      "name" : "Element not found {.input__sub}\r\nExpected: visible\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334781217.1.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334781217.1.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\r\nExpected: visible\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626335501581.1.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626335501581.1.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "Notification if 'Triple Zero'",
-        "uid" : "4143998c07d5c2bd",
-        "parentUid" : "39a825b74a796327cb10aa82d16e6fc9",
+        "uid" : "f1e42faa1b246a7f",
+        "parentUid" : "77f7475945dbba22aa453213c073e2e6",
         "status" : "failed",
         "time" : {
-          "start" : 1626334775734,
-          "stop" : 1626334781554,
-          "duration" : 5820
+          "start" : 1626335496381,
+          "stop" : 1626335501938,
+          "duration" : 5557
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "39a825b74a796327cb10aa82d16e6fc9"
+      "uid" : "77f7475945dbba22aa453213c073e2e6"
     }, {
-      "name" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334818261.2.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334818261.2.html\r\nTimeout: 15 s.",
+      "name" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626335538703.2.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626335538703.2.html\r\nTimeout: 15 s.",
       "children" : [ {
         "name" : "Debit buying by DECLINED-card",
-        "uid" : "8f787aa6c81ce738",
-        "parentUid" : "098427f26a3b89bf5f0e8d42aaf0a5f3",
+        "uid" : "9a59dbd9f2f478b7",
+        "parentUid" : "d2558f33bb7cae5cb7abdad276d740bd",
         "status" : "failed",
         "time" : {
-          "start" : 1626334802063,
-          "stop" : 1626334818595,
-          "duration" : 16532
+          "start" : 1626335522441,
+          "stop" : 1626335539015,
+          "duration" : 16574
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "098427f26a3b89bf5f0e8d42aaf0a5f3"
+      "uid" : "d2558f33bb7cae5cb7abdad276d740bd"
     }, {
-      "name" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334844557.3.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334844557.3.html\r\nTimeout: 15 s.",
+      "name" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626335566375.3.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626335566375.3.html\r\nTimeout: 15 s.",
       "children" : [ {
         "name" : "Credit buying by DECLINED-card",
-        "uid" : "7f25ed819d61ffe7",
-        "parentUid" : "9d3f1b33161c15d83fa44756b72fc973",
+        "uid" : "841b7e6b2eb2b964",
+        "parentUid" : "2e002109d57f20a3bec99bab6555f1cd",
         "status" : "failed",
         "time" : {
-          "start" : 1626334828245,
-          "stop" : 1626334844796,
-          "duration" : 16551
+          "start" : 1626335550192,
+          "stop" : 1626335566652,
+          "duration" : 16460
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "9d3f1b33161c15d83fa44756b72fc973"
+      "uid" : "2e002109d57f20a3bec99bab6555f1cd"
     }, {
-      "name" : "Element not found {.input__sub}\r\nExpected: visible\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334849900.4.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334849900.4.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\r\nExpected: visible\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626335571421.4.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626335571421.4.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "Name format validation",
-        "uid" : "1526b267c291aa31",
-        "parentUid" : "70da813c542542f55dbe68d0e29d0a24",
+        "uid" : "b5b3ea06f85bd910",
+        "parentUid" : "359321133b9e34e8ced5d4b9cb8af85b",
         "status" : "failed",
         "time" : {
-          "start" : 1626334844796,
-          "stop" : 1626334850250,
-          "duration" : 5454
+          "start" : 1626335566656,
+          "stop" : 1626335571787,
+          "duration" : 5131
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "70da813c542542f55dbe68d0e29d0a24"
+      "uid" : "359321133b9e34e8ced5d4b9cb8af85b"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
