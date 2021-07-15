@@ -5,7 +5,7 @@ ___
 
 [![Build status](https://ci.appveyor.com/api/projects/status/kur6hbmt73uwwlcs/branch/master?svg=true)](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)
 
-[<img width="116" height="89" src="https://user-images.githubusercontent.com/47859608/125807916-bdcaa4bd-6165-4c56-ae3c-90102c961362.png" />](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)
+[<img width="116" height="89" src="https://user-images.githubusercontent.com/47859608/125807916-bdcaa4bd-6165-4c56-ae3c-90102c961362.png" />](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.ymlhttps://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml)
 
 [![Gradle Package](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml)
 ___
