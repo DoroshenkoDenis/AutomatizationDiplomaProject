@@ -8,7 +8,7 @@ ___
 [Задание на дипломную работу профессии «Тестировщик»](https://github.com/netology-code/qa-diploma)
 ___
 
-[Test Plan](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/blob/master/TestPlan.md)
+[Test Plan](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/blob/master/Docs/TestPlan.md)
 ___
 
 ## Процедура запуска авто-тестов
