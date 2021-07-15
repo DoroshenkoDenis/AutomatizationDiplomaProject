@@ -1,0 +1,57 @@
+{
+  "uid" : "39076e839b573d0f",
+  "name" : "Checking table fields when debit buying by APPROVED-card",
+  "fullName" : "test.dbTest.dbTest.shouldFillInFieldsIfDebitBuyingByApprovedCard",
+  "historyId" : "1fc1ba1735a9637030e95b2013db4b33",
+  "time" : {
+    "start" : 1626333191461,
+    "stop" : 1626333191575,
+    "duration" : 114
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-P6NBLT8"
+  }, {
+    "name" : "thread",
+    "value" : "19336@DESKTOP-P6NBLT8.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "test.dbTest.dbTest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.dbTest.dbTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldFillInFieldsIfDebitBuyingByApprovedCard"
+  }, {
+    "name" : "suite",
+    "value" : "Database testing"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "39076e839b573d0f.json",
+  "parameterValues" : [ ]
+}
