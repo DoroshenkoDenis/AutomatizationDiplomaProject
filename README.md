@@ -1,14 +1,19 @@
 # AutomatizationDiplomaProject
+___
+### CI/CD
 
 ![CICDSecurity](https://user-images.githubusercontent.com/47859608/123905410-58482b80-d983-11eb-9af7-a21b30b6cde3.jpg)
 
 [![Build status](https://ci.appveyor.com/api/projects/status/kur6hbmt73uwwlcs/branch/master?svg=true)](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)      [![Gradle Package](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml)
 
 ___
-[Задание на дипломную работу профессии «Тестировщик»](https://github.com/netology-code/qa-diploma)
-___
+[Tasks](https://github.com/netology-code/qa-diploma)
 
 [Test Plan](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/blob/master/Docs/TestPlan.md)
+
+[Test summary reports](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/blob/master/Docs/Report.md)
+
+[Test automation reporting]()
 ___
 
 ## Процедура запуска авто-тестов
@@ -43,6 +48,6 @@ ___
 * запустить тесты, используя PostgreSQL  
   `./gradlew clean test -DdataBase.url=jdbc:postgresql://localhost:5432/app -Dusername=app -Dpassword=pass --info`
 ___
-## Test reports
-* [Gradel Test Summary](https://automatization-diploma-project-reports.vercel.app/)
+## Test Summaries
+* [Gradle Test Summary](https://automatization-diploma-project-reports.vercel.app/)
 * [Allure Test Summary](https://automatization-diploma-project-allure-test-summary.vercel.app/)
