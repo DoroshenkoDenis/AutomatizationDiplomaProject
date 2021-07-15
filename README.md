@@ -2,7 +2,7 @@
 
 ### CI/CD
 <div>
-<img width="355" height="70" src="https://user-images.githubusercontent.com/47859608/125802352-28e30391-ca9d-4538-b11d-00e254bcd235.jpg" href="https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master"/>
+<img width="355" height="70" href="https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master" src="https://user-images.githubusercontent.com/47859608/125802352-28e30391-ca9d-4538-b11d-00e254bcd235.jpg" />
 </div>
 
 <!-- ![1520215134874](https://user-images.githubusercontent.com/47859608/125802352-28e30391-ca9d-4538-b11d-00e254bcd235.jpg) -->
