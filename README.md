@@ -2,7 +2,7 @@
 ___
 ### CI/CD
 
-![CICDSecurity](https://user-images.githubusercontent.com/47859608/123905410-58482b80-d983-11eb-9af7-a21b30b6cde3.jpg)
+[<img align="right" src="https://user-images.githubusercontent.com/47859608/125795732-5a2bbcf6-7144-4902-92b2-1ee7ada306ef.jpg"/>](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)
 
 [![Build status](https://ci.appveyor.com/api/projects/status/kur6hbmt73uwwlcs/branch/master?svg=true)](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)      [![Gradle Package](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml)
 
