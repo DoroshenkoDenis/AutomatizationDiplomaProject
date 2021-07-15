@@ -1,13 +1,18 @@
 # AutomatizationDiplomaProject
 
-### CI/CD
+## CI/CD
 
 [<img width="175" height="35" src="https://user-images.githubusercontent.com/47859608/125804325-a2f81782-9191-4400-b44b-3575b3cbe5ee.jpg" />](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)
 
 [![Build status](https://ci.appveyor.com/api/projects/status/kur6hbmt73uwwlcs/branch/master?svg=true)](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)
 [![Gradle Package](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml)
 
+## Test Summaries
+* [Gradle Test Summary](https://automatization-diploma-project-reports.vercel.app/)
+* [Allure Test Summary](https://automatization-diploma-project-allure-test-summary.vercel.app/)
 ___
+## Docs
+
 [Tasks](https://github.com/netology-code/qa-diploma)
 
 [Test Plan](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/blob/master/Docs/TestPlan.md)
@@ -48,7 +53,3 @@ ___
   `java -jar aqa-shop/aqa-shop.jar --spring.datasource.url=jdbc:postgresql://localhost:5432/app &`
 * запустить тесты, используя PostgreSQL  
   `./gradlew clean test -DdataBase.url=jdbc:postgresql://localhost:5432/app -Dusername=app -Dpassword=pass --info`
-___
-## Test Summaries
-* [Gradle Test Summary](https://automatization-diploma-project-reports.vercel.app/)
-* [Allure Test Summary](https://automatization-diploma-project-allure-test-summary.vercel.app/)
