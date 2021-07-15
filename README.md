@@ -2,7 +2,7 @@
 
 ### CI/CD
 <div>
-<img align="right" width="450" height="222"src="https://user-images.githubusercontent.com/47859608/125795732-5a2bbcf6-7144-4902-92b2-1ee7ada306ef.jpg" href="https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master"/>
+<img align="right" width="310" height="188"src="https://user-images.githubusercontent.com/47859608/125795732-5a2bbcf6-7144-4902-92b2-1ee7ada306ef.jpg" href="https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master"/>
 </div>
 
 [![Build status](https://ci.appveyor.com/api/projects/status/kur6hbmt73uwwlcs/branch/master?svg=true)](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)
