@@ -1,12 +1,14 @@
 # AutomatizationDiplomaProject
-
+___
 ## CI/CD
-
 [<img width="175" height="35" src="https://user-images.githubusercontent.com/47859608/125804325-a2f81782-9191-4400-b44b-3575b3cbe5ee.jpg" />](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)
 
 [![Build status](https://ci.appveyor.com/api/projects/status/kur6hbmt73uwwlcs/branch/master?svg=true)](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)
-[![Gradle Package](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml)
 
+[<img width="116" height="89" src="https://user-images.githubusercontent.com/47859608/125807916-bdcaa4bd-6165-4c56-ae3c-90102c961362.png" />](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)
+
+[![Gradle Package](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/actions/workflows/gradle-publish.yml)
+___
 ## Test Summaries
 * [Gradle Test Summary](https://automatization-diploma-project-reports.vercel.app/)
 * [Allure Test Summary](https://automatization-diploma-project-allure-test-summary.vercel.app/)
