@@ -3,15 +3,13 @@ package test.uiTest;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import page.PaymentForm;
 import page.SalesPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
+@DisplayName("'Card Number' field testing")
 public class CardNumberFieldTest {
     PaymentForm paymentForm = new PaymentForm();
     SalesPage salesPage = new SalesPage();
@@ -31,6 +29,7 @@ public class CardNumberFieldTest {
         open("http://localhost:8080");
     }
 
+    @DisplayName("Empty field notification")
     @Test
     void emptyCardNumberField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -44,6 +43,7 @@ public class CardNumberFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Notification if 'Incomplete card number'")
     @Test
     void shortNumberInCardNumberField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -57,6 +57,7 @@ public class CardNumberFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Notification if 'One digit in field'")
     @Test
     void oneNumberInCardNumberField() {
         salesPage.buyByDebit().buyWithCardInfo(

@@ -8,7 +8,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("Тестирование базы данных")
+@DisplayName("Database testing")
 public class dbTest {
 
     @BeforeEach
@@ -27,7 +27,7 @@ public class dbTest {
     }
 
     @Test
-    @DisplayName("Проверка заполнения полей таблиц при покупке картой со статусом APPROVED")
+    @DisplayName("Checking table fields when debit buying by APPROVED-card")
     void shouldFillInFieldsIfDebitBuyingByApprovedCard() {
         APIHelper.debitBuying(
                 "APPROVED",
@@ -46,7 +46,7 @@ public class dbTest {
     }
 
     @Test
-    @DisplayName("Проверка заполнения полей таблиц при покупке картой со статусом DECLINED")
+    @DisplayName("Checking table fields when debit buying by DECLINED-card")
     void shouldFillInFieldsIfDebitBuyingByDeclinedCard() {
         APIHelper.debitBuying(
                 "DECLINED",
@@ -65,7 +65,7 @@ public class dbTest {
     }
 
     @Test
-    @DisplayName("Проверка заполнения полей таблиц при покупке в кредит картой со статусом APPROVED")
+    @DisplayName("Checking table fields when credit buying by APPROVED-card")
     void shouldFillInFieldsIfCreditBuyingByApprovedCard() {
         APIHelper.creditBuying(
                 "APPROVED",
@@ -83,8 +83,26 @@ public class dbTest {
     }
 
     @Test
-    @DisplayName("Проверка заполнения полей таблиц при покупке в кредит картой со статусом DECLINED")
+    @DisplayName("Checking table fields when credit buying by DECLINED-card")
     void shouldFillInFieldsIfCreditBuyingByDeclinedCard() {
+        APIHelper.creditBuying(
+                "DECLINED",
+                "en",
+                "future",
+                "future",
+                "goodName",
+                "random"
+        );
+        assertNotNull(DataBaseHelper.getCreditRequestEntity().getBankIdFromCreditRequestEntity());
+        assertNotNull(DataBaseHelper.getCreditRequestEntity().getCreatedDateFromCreditRequestEntity());
+        assertEquals("DECLINED", DataBaseHelper.getCreditRequestEntity().getStatusFromCreditRequestEntity());
+        assertNotNull(DataBaseHelper.getOrderEntityInfo().getCreatedDateFromOrderEntity());
+        assertNotNull(DataBaseHelper.getOrderEntityInfo().getCreditIdFromOrderEntity());
+    }
+
+    @Test
+    @DisplayName("Checking table fields when credit buying by DECLINED-card")
+    void createTimeTesting() {
         APIHelper.creditBuying(
                 "DECLINED",
                 "en",

@@ -3,15 +3,13 @@ package test.uiTest;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import page.PaymentForm;
 import page.SalesPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
+@DisplayName("'Year' field testing")
 public class YearFieldTest {
     PaymentForm paymentForm = new PaymentForm();
     SalesPage salesPage = new SalesPage();
@@ -31,6 +29,7 @@ public class YearFieldTest {
         open("http://localhost:8080");
     }
 
+    @DisplayName("Past year and current month")
     @Test
     void pastDateInYearFieldAndCurrentDateInMonthField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -44,6 +43,7 @@ public class YearFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Empty field notification")
     @Test
     void emptyYearField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -57,6 +57,7 @@ public class YearFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Notification if 'Zero'")
     @Test
     void zeroDigitInYearField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -70,6 +71,7 @@ public class YearFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Notification if 'Double Zero'")
     @Test
     void doubleZeroDigitInYearField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -83,6 +85,7 @@ public class YearFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Notification if 'Year equals more than five years from now' ")
     @Test
     void badRandomDigitInYearField() {
         salesPage.buyByDebit().buyWithCardInfo(

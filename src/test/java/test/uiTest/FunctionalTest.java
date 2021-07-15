@@ -3,10 +3,7 @@ package test.uiTest;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import page.PaymentForm;
 import page.SalesPage;
 
@@ -14,6 +11,7 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.*;
 
+@DisplayName("Functional testing")
 public class FunctionalTest {
     SalesPage salesPage = new SalesPage();
     PaymentForm paymentForm = new PaymentForm();
@@ -33,6 +31,7 @@ public class FunctionalTest {
         open("http://localhost:8080");
     }
 
+    @DisplayName("Debit buying by APPROVED-card")
     @Test
     void debitBuyingByApprovedCard() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -46,6 +45,7 @@ public class FunctionalTest {
         salesPage.getSuccessNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
 
+    @DisplayName("Debit buying by DECLINED-card")
     @Test
     void debitBuyingByDeclinedCard() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -59,6 +59,7 @@ public class FunctionalTest {
         salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
 
+    @DisplayName("Credit buying by APPROVED-card")
     @Test
     void creditBuyingByApprovedCard() {
         salesPage.buyByCredit().buyWithCardInfo(
@@ -72,6 +73,7 @@ public class FunctionalTest {
         salesPage.getSuccessNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
 
+    @DisplayName("Credit buying by DECLINED-card")
     @Test
     void creditBuyingByDeclinedCard() {
         salesPage.buyByCredit().buyWithCardInfo(
@@ -85,6 +87,7 @@ public class FunctionalTest {
         salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
 
+    @DisplayName("Debit buying by Random-card")
     @Test
     void debitBuyingByAnotherCard() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -98,6 +101,7 @@ public class FunctionalTest {
         salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
 
+    @DisplayName("Credit buying by Random-card")
     @Test
     void creditBuyingByAnotherCard() {
         salesPage.buyByCredit().buyWithCardInfo(
@@ -111,6 +115,7 @@ public class FunctionalTest {
         salesPage.getErrorNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
 
+    @DisplayName("Empty form sending")
     @Test
     void continueWithEmptyFields() {
         salesPage.buyByDebit().moveWhichContinueButton();

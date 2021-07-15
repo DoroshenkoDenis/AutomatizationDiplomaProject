@@ -37,10 +37,11 @@ dependencies {
     testImplementation 'org.slf4j:slf4j-simple:1.7.30'
 }
 
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
 
 test {
     useJUnitPlatform()
-    systemProperty 'selenide.headless', System.getProperty('selenide.headless')
-    systemProperty 'postgresql.url', System.getProperty('postgresql.url')
-//  username and password set by default in DataBaseHelper
+    systemProperties = System.properties as Map<String, ?>
 }

@@ -28,7 +28,7 @@ ___
 * Запустить SUT aqa-shop.jar командой  
   `java -jar aqa-shop/aqa-shop.jar &`
 * Запустить авто тесты командой  
-  `./gradlew clean test --info -Dselenide.headless=true`
+  `./gradlew clean test --info`
 
 ### Отчёты Allure:
 * Создать отчёты Allure и открыть в браузере   
@@ -41,7 +41,7 @@ ___
 * перезапустить SUT  
   `java -jar aqa-shop/aqa-shop.jar --spring.datasource.url=jdbc:postgresql://localhost:5432/app &`
 * запустить тесты, используя PostgreSQL  
-  `./gradlew clean test -Dpostgresql.url=jdbc:postgresql://localhost:5432/app -Dusername=app -Dpassword=pass --info -Dselenide.headless=true`
+  `./gradlew clean test -DdataBase.url=jdbc:postgresql://localhost:5432/app -Dusername=app -Dpassword=pass --info`
 ___
 ## Test reports
 * [Gradel Test Summary](https://automatization-diploma-project-reports.vercel.app/)

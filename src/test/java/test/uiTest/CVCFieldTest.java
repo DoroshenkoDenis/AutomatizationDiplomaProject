@@ -3,15 +3,13 @@ package test.uiTest;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import page.PaymentForm;
 import page.SalesPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
+@DisplayName("'CVC' field testing")
 public class CVCFieldTest {
     PaymentForm paymentForm = new PaymentForm();
     SalesPage salesPage = new SalesPage();
@@ -31,6 +29,7 @@ public class CVCFieldTest {
         SelenideLogger.removeListener("allure");
     }
 
+    @DisplayName("Empty field notification")
     @Test
     void emptyCVCNumberField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -44,6 +43,7 @@ public class CVCFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Notification if 'Triple Zero'")
     @Test
     void tripleZeroInCVCNumberField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -57,6 +57,7 @@ public class CVCFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Notification if 'Incomplete code'")
     @Test
     void shortNumberInCVCNumberField() {
         salesPage.buyByDebit().buyWithCardInfo(

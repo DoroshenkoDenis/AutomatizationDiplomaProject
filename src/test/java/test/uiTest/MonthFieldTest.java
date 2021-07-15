@@ -3,10 +3,7 @@ package test.uiTest;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import page.PaymentForm;
 import page.SalesPage;
 
@@ -14,6 +11,7 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.open;
 
+@DisplayName("'Month' field testing")
 public class MonthFieldTest {
     PaymentForm paymentForm = new PaymentForm();
     SalesPage salesPage = new SalesPage();
@@ -33,6 +31,7 @@ public class MonthFieldTest {
         open("http://localhost:8080");
     }
 
+    @DisplayName("Current date in month and year fields")
     @Test
     void currentDateInMonthAndYearFields() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -46,6 +45,7 @@ public class MonthFieldTest {
         salesPage.getSuccessNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
 
+    @DisplayName("Future month and current year")
     @Test
     void futureDateInMonthFieldAndCurrentDateInYearField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -59,6 +59,7 @@ public class MonthFieldTest {
         salesPage.getSuccessNotification().shouldBe(Condition.visible, Duration.ofMillis(15000));
     }
 
+    @DisplayName("Past month and current year")
     @Test
     void pastDateInMonthFieldAndCurrentDateInYearField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -72,6 +73,7 @@ public class MonthFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Empty field notification")
     @Test
     void emptyMonthField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -85,6 +87,7 @@ public class MonthFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Notification if 'Zero'")
     @Test
     void zeroDigitInMonthField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -98,6 +101,7 @@ public class MonthFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Notification if 'Double Zero'")
     @Test
     void doubleZeroDigitInMonthField() {
         salesPage.buyByDebit().buyWithCardInfo(
@@ -111,6 +115,7 @@ public class MonthFieldTest {
         paymentForm.getWrongFormatNotification().shouldBe(Condition.visible);
     }
 
+    @DisplayName("Notification if 'Incorrect month number: 13-99' ")
     @Test
     void badRandomDigitInMonthField() {
         salesPage.buyByDebit().buyWithCardInfo(

@@ -19,9 +19,9 @@ public class DataBaseHelper {
     @SneakyThrows
     private static Connection connection() {
         return DriverManager.getConnection
-                (System.getProperty("postgresql.url", "jdbc:mysql://localhost:3306/app"),
-                        System.getProperty("username", "app"),
-                        System.getProperty("password", "pass")
+                (System.getProperty("dataBase.url"),
+                        System.getProperty("username"),
+                        System.getProperty("password")
                 );
     }
 

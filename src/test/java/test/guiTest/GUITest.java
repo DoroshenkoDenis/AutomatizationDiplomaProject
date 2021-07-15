@@ -3,10 +3,7 @@ package test.guiTest;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import page.PaymentForm;
 import page.SalesPage;
 
@@ -14,6 +11,7 @@ import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.open;
 
+@DisplayName("GUI testing")
 public class GUITest {
     SalesPage salesPage = new SalesPage();
     PaymentForm paymentForm = new PaymentForm();
@@ -33,24 +31,27 @@ public class GUITest {
         open("http://localhost:8080");
     }
 
-
+    @DisplayName("Page Head title checking")
     @Test
     void headTitleTest() {
         salesPage.getHeadTitle().shouldHave(attribute("text", "Путешествие дня"));
     }
 
+    @DisplayName("Page Debit title checking")
     @Test
     void debitHeadingTitleTest() {
         salesPage.getDebitBuyingButton().click();
         salesPage.getBody().shouldHave(text("Оплата по карте"));
     }
 
+    @DisplayName("Page Credit title checking")
     @Test
     void creditHeadTitleTest() {
         salesPage.getCreditBuyingButton().click();
         salesPage.getBody().shouldHave(text("Кредит по данным карты"));
     }
 
+    @DisplayName("Sending Data Visualization")
     @Test
     void sendingVisualizationTest() {
         salesPage.buyByDebit().buyWithCardInfo(
