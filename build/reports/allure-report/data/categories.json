@@ -1,31 +1,32 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
       "name" : "expected: not <null>",
       "children" : [ {
         "name" : "Checking table fields when credit buying by DECLINED-card",
-        "uid" : "c136ff090e33f972",
+        "uid" : "2988eea4b4a44fd4",
         "parentUid" : "5f18c668031a56c86d9361a8797e5508",
         "status" : "failed",
         "time" : {
-          "start" : 1626333190806,
-          "stop" : 1626333191228,
-          "duration" : 422
+          "start" : 1626334761415,
+          "stop" : 1626334761828,
+          "duration" : 413
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Checking table fields when credit buying by APPROVED-card",
-        "uid" : "88e73eb266a8d59c",
+        "uid" : "3a51dfe295ca85a2",
         "parentUid" : "5f18c668031a56c86d9361a8797e5508",
         "status" : "failed",
         "time" : {
-          "start" : 1626333191232,
-          "stop" : 1626333191361,
-          "duration" : 129
+          "start" : 1626334761833,
+          "stop" : 1626334761977,
+          "duration" : 144
         },
         "flaky" : false,
         "newFailed" : false,
@@ -33,92 +34,91 @@
       } ],
       "uid" : "5f18c668031a56c86d9361a8797e5508"
     }, {
-      "name" : "Element should have attribute text=\"Путешествие дня\" {title}\r\nElement: '<title displayed:false></title>'\r\nActual value: text=\"AQA: Заявка на карту\"\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626333198603.0.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626333198603.0.html\r\nTimeout: 4 s.",
+      "name" : "Element should have attribute text=\"Путешествие дня\" {title}\r\nElement: '<title displayed:false></title>'\r\nActual value: text=\"AQA: Заявка на карту\"\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334769388.0.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334769388.0.html\r\nTimeout: 4 s.",
       "children" : [ {
         "name" : "Page Head title checking",
-        "uid" : "6de315002086728e",
-        "parentUid" : "5df8a45704b8d5ca576495d3259b3b15",
+        "uid" : "27131d01651ecaae",
+        "parentUid" : "a351085b6e32a45732f32777be788c0d",
         "status" : "failed",
         "time" : {
-          "start" : 1626333194462,
-          "stop" : 1626333198845,
-          "duration" : 4383
+          "start" : 1626334765176,
+          "stop" : 1626334769660,
+          "duration" : 4484
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "5df8a45704b8d5ca576495d3259b3b15"
+      "uid" : "a351085b6e32a45732f32777be788c0d"
     }, {
-      "name" : "Element not found {.input__sub}\r\nExpected: visible\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626333210147.1.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626333210147.1.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\r\nExpected: visible\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334781217.1.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334781217.1.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "Notification if 'Triple Zero'",
-        "uid" : "bd7beb5726884595",
-        "parentUid" : "0c11b9d7bfd4c6f58a21301261cdeef2",
+        "uid" : "4143998c07d5c2bd",
+        "parentUid" : "39a825b74a796327cb10aa82d16e6fc9",
         "status" : "failed",
         "time" : {
-          "start" : 1626333205017,
-          "stop" : 1626333210486,
-          "duration" : 5469
+          "start" : 1626334775734,
+          "stop" : 1626334781554,
+          "duration" : 5820
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "0c11b9d7bfd4c6f58a21301261cdeef2"
+      "uid" : "39a825b74a796327cb10aa82d16e6fc9"
     }, {
-      "name" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626333254033.2.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626333254033.2.html\r\nTimeout: 15 s.",
+      "name" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334818261.2.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334818261.2.html\r\nTimeout: 15 s.",
       "children" : [ {
         "name" : "Debit buying by DECLINED-card",
-        "uid" : "53d0048e14180b38",
-        "parentUid" : "1f964a3944bc3e191d555de740be9f08",
+        "uid" : "8f787aa6c81ce738",
+        "parentUid" : "098427f26a3b89bf5f0e8d42aaf0a5f3",
         "status" : "failed",
         "time" : {
-          "start" : 1626333237826,
-          "stop" : 1626333254389,
-          "duration" : 16563
+          "start" : 1626334802063,
+          "stop" : 1626334818595,
+          "duration" : 16532
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "1f964a3944bc3e191d555de740be9f08"
+      "uid" : "098427f26a3b89bf5f0e8d42aaf0a5f3"
     }, {
-      "name" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626333281068.3.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626333281068.3.html\r\nTimeout: 15 s.",
+      "name" : "Element should be visible {.notification_status_error}\r\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\r\nActual value: visible:false\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334844557.3.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334844557.3.html\r\nTimeout: 15 s.",
       "children" : [ {
         "name" : "Credit buying by DECLINED-card",
-        "uid" : "dd79348b327edc46",
-        "parentUid" : "918bdee25739ccc7b04940a59034685f",
+        "uid" : "7f25ed819d61ffe7",
+        "parentUid" : "9d3f1b33161c15d83fa44756b72fc973",
         "status" : "failed",
         "time" : {
-          "start" : 1626333264844,
-          "stop" : 1626333281327,
-          "duration" : 16483
+          "start" : 1626334828245,
+          "stop" : 1626334844796,
+          "duration" : 16551
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "918bdee25739ccc7b04940a59034685f"
+      "uid" : "9d3f1b33161c15d83fa44756b72fc973"
     }, {
-      "name" : "Element not found {.input__sub}\r\nExpected: visible\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626333286372.4.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626333286372.4.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\r\nExpected: visible\r\nScreenshot: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334849900.4.png\r\nPage source: file:/H:/Netology/04%20AutomatedTesting/HomeWorks/AutomatizationDiplomaProject/build/reports/tests/1626334849900.4.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "Name format validation",
-        "uid" : "d6263e666fe82251",
-        "parentUid" : "fb2adf92db521a9deb82386c3bdb9903",
+        "uid" : "1526b267c291aa31",
+        "parentUid" : "70da813c542542f55dbe68d0e29d0a24",
         "status" : "failed",
         "time" : {
-          "start" : 1626333281327,
-          "stop" : 1626333286658,
-          "duration" : 5331
+          "start" : 1626334844796,
+          "stop" : 1626334850250,
+          "duration" : 5454
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "fb2adf92db521a9deb82386c3bdb9903"
+      "uid" : "70da813c542542f55dbe68d0e29d0a24"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ],
-  "name" : "categories"
+  } ]
 }
