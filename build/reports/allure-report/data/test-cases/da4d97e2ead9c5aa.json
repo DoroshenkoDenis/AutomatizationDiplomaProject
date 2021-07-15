@@ -1,0 +1,57 @@
+{
+  "uid" : "da4d97e2ead9c5aa",
+  "name" : "Debit buying by APPROVED-card",
+  "fullName" : "test.apiTest.APITest.debitBuyingByApprovedCard",
+  "historyId" : "667abf58d4ff002fadef6c0fde2ee57e",
+  "time" : {
+    "start" : 1626347937273,
+    "stop" : 1626347937343,
+    "duration" : 70
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-P6NBLT8"
+  }, {
+    "name" : "thread",
+    "value" : "2368@DESKTOP-P6NBLT8.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "test.apiTest.APITest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.apiTest.APITest"
+  }, {
+    "name" : "testMethod",
+    "value" : "debitBuyingByApprovedCard"
+  }, {
+    "name" : "suite",
+    "value" : "API testing"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da4d97e2ead9c5aa.json",
+  "parameterValues" : [ ]
+}
