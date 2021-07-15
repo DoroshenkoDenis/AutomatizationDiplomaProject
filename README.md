@@ -21,7 +21,7 @@ ___
 
 [Test summary reports](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/blob/master/Docs/Report.md)
 
-[Test automation reporting]()
+[Test automation reporting](https://github.com/DoroshenkoDenis/AutomatizationDiplomaProject/blob/master/Docs/Summary.md)
 ___
 
 ## Процедура запуска авто-тестов
