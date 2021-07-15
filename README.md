@@ -1,11 +1,8 @@
 # AutomatizationDiplomaProject
 
 ### CI/CD
-<div>
-<img width="355" height="70" href="https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master" src="https://user-images.githubusercontent.com/47859608/125802352-28e30391-ca9d-4538-b11d-00e254bcd235.jpg" />
-</div>
 
-<!-- ![1520215134874](https://user-images.githubusercontent.com/47859608/125802352-28e30391-ca9d-4538-b11d-00e254bcd235.jpg) -->
+[<img width="355" height="70" src="https://user-images.githubusercontent.com/47859608/125802352-28e30391-ca9d-4538-b11d-00e254bcd235.jpg" />](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)
 
 
 [![Build status](https://ci.appveyor.com/api/projects/status/kur6hbmt73uwwlcs/branch/master?svg=true)](https://ci.appveyor.com/project/DoroshenkoDenis/automatizationdiplomaproject/branch/master)
